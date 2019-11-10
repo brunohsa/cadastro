@@ -1,11 +1,14 @@
 package br.com.unip.cardapio.repository
 
-import br.com.unip.cardapio.domain.PessoaFisicaDomain
-import br.com.unip.cardapio.domain.PessoaJuridicaDomain
+import br.com.unip.cardapio.domain.completo.IPessoaCompletaDomain
+import br.com.unip.cardapio.domain.parcial.IPessoaParcialDomain
+import br.com.unip.cardapio.repository.entity.Pessoa
 
 interface IPessoaRepository {
 
-    fun cadastrarPessoaFisica(pessoaFisicaDomain: PessoaFisicaDomain) : String
+    fun criar(domain: IPessoaParcialDomain): Pessoa
 
-    fun cadastrarPessoaJuridica(pessoaJuridicaDomain: PessoaJuridicaDomain): String
+    fun atualizar(domain: IPessoaCompletaDomain, pessoa: Pessoa): Pessoa
+
+    fun buscar(id: Long): Pessoa
 }

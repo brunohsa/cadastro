@@ -8,6 +8,6 @@ import javax.persistence.Entity
 @Entity
 class PessoaJuridica(nome: String,
                      telefone: String,
-                     @Column val dataFundacao: LocalDate,
+                     @Column var dataFundacao: LocalDate?,
                      tipoDocumento: ETipoDocumento,
                      numero: String) : Pessoa(nome, telefone, tipoDocumento, numero)

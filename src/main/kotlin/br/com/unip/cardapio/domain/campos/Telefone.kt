@@ -6,8 +6,12 @@ class Telefone : ICampo<String> {
 
     val telefone: String
 
-    constructor(telefone: String) {
-        this.telefone = CampoTamanhoLimite(CampoNumerico(CampoObrigatorio(telefone)), TAMANHO_LIMITE).get()
+    constructor(telefone: String?) {
+        if (telefone.isNullOrEmpty()) {
+            this.telefone = ""
+        } else {
+            this.telefone = CampoTamanhoLimite(CampoNumerico(CampoOpcional(telefone)), TAMANHO_LIMITE).get()
+        }
     }
 
     override fun get(): String {

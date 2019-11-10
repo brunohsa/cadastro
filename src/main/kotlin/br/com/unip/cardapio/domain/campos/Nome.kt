@@ -4,8 +4,8 @@ class Nome : ICampo<String> {
 
     val nome: String
 
-    constructor(nome: String) {
-        this.nome = CampoObrigatorio(nome).get()
+    constructor(nome: String?) {
+        this.nome = CampoObrigatorio(nome).get()!!
     }
 
     override fun get(): String {
