@@ -1,5 +1,6 @@
 package br.com.unip.cardapio.service
 
+import br.com.unip.cardapio.dto.CadastroDTO
 import br.com.unip.cardapio.dto.IPessoaDTO
 
 interface ICadastroService {
@@ -7,4 +8,6 @@ interface ICadastroService {
     fun cadastrar(dto: IPessoaDTO): String
 
     fun completarDados(dto: IPessoaDTO, cadastroUuid: String?)
+
+    fun buscar(uuid: String?): CadastroDTO
 }
