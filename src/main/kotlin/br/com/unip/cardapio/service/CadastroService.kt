@@ -3,7 +3,9 @@ package br.com.unip.cardapio.service
 import br.com.unip.cardapio.domain.completo.CadastroCompletoDomain
 import br.com.unip.cardapio.domain.parcial.CadastroParcialDomain
 import br.com.unip.cardapio.domain.parcial.IPessoaParcialDomain
+import br.com.unip.cardapio.dto.CadastroDTO
 import br.com.unip.cardapio.dto.IPessoaDTO
+import br.com.unip.cardapio.exception.CadastroNaoEncontradoException
 import br.com.unip.cardapio.exception.CampoObrigatorioException
 import br.com.unip.cardapio.exception.ECodigoErro
 import br.com.unip.cardapio.exception.ParametroInvalidoException
@@ -12,6 +14,7 @@ import br.com.unip.cardapio.mapper.PessoaParcialDomainMapper
 import br.com.unip.cardapio.repository.ICadastroRepository
 import br.com.unip.cardapio.repository.entity.enums.EStatusCadastro
 import org.springframework.stereotype.Service
+import java.lang.RuntimeException
 
 @Service
 class CadastroService(val pessoaParcialMapper: PessoaParcialDomainMapper,
@@ -42,5 +45,12 @@ class CadastroService(val pessoaParcialMapper: PessoaParcialDomainMapper,
         val cadastro = CadastroCompletoDomain(pessoaDomain, EStatusCadastro.COMPLETO)
 
         cadastroRepository.atualizar(cadastro, cadastroUuid)
+    }
+
+    override fun buscar(uuid: String?): CadastroDTO {
+        if (uuid.isNullOrEmpty()) {
+            throw CampoObrigatorioException("O identificador do cadastro é obrigatório", ECodigoErro.CAD003)
+        }
+        return cadastroRepository.buscar(uuid) ?: throw CadastroNaoEncontradoException()
     }
 }

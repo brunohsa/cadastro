@@ -1,5 +1,6 @@
 package br.com.unip.cardapio.webservice
 
+import br.com.unip.cardapio.dto.CadastroDTO
 import br.com.unip.cardapio.dto.PessoaFisicaDTO
 import br.com.unip.cardapio.dto.PessoaJuridicaDTO
 import br.com.unip.cardapio.service.ICadastroService
@@ -7,6 +8,8 @@ import br.com.unip.cardapio.webservice.model.request.CompletarDadosPFRequest
 import br.com.unip.cardapio.webservice.model.request.CompletarDadosPJRequest
 import br.com.unip.cardapio.webservice.model.request.PessoaFisicaRequest
 import br.com.unip.cardapio.webservice.model.request.PessoaJuridicaRequest
+import br.com.unip.cardapio.webservice.model.response.CadastroResponse
+import br.com.unip.cardapio.webservice.model.response.PessoaResponse
 import br.com.unip.cardapio.webservice.model.response.Response
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.PathVariable
@@ -47,5 +50,18 @@ class CadastroPessoaWS(val cadastroService: ICadastroService) {
         val dto = PessoaJuridicaDTO(request.telefone, request.dataFundacao, request.cnpj)
         cadastroService.completarDados(dto, cadastroUuid)
         return ResponseEntity.ok().build()
+    }
+
+    @RequestMapping(value = ["/{uuid}"], method = [RequestMethod.GET])
+    fun buscar(@PathVariable("uuid") cadastroUuid: String?): ResponseEntity<CadastroResponse> {
+        val cadastroDTO = cadastroService.buscar(cadastroUuid)
+        return ResponseEntity.ok(map(cadastroDTO))
+    }
+
+    private fun map(cadastroDTO: CadastroDTO): CadastroResponse {
+        val pessoaDTO = cadastroDTO.pessoa
+        val pessoaResponse = PessoaResponse(pessoaDTO.nome, pessoaDTO.tipoDocumento, pessoaDTO.numero)
+
+        return CadastroResponse(cadastroDTO.uuid, cadastroDTO.status, pessoaResponse)
     }
 }
