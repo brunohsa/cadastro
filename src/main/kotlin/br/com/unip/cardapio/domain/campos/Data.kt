@@ -8,7 +8,7 @@ import java.time.format.DateTimeParseException
 
 class Data : ICampo<LocalDate?> {
 
-    private val DATE_FORMAT: String = "dd/MM/yyyy"
+    private val DATE_FORMAT: String = "yyyy-MM-dd"
 
     val data: LocalDate?
 
