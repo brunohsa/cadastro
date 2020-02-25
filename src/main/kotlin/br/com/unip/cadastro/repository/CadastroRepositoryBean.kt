@@ -7,6 +7,7 @@ import br.com.unip.cadastro.dto.DocumentoDTO
 import br.com.unip.cadastro.dto.EnderecoDTO
 import br.com.unip.cadastro.dto.PessoaDTO
 import br.com.unip.cadastro.mapper.CadastroEntityMapper
+import br.com.unip.cadastro.mapper.PessoaEntityMapper
 import br.com.unip.cadastro.repository.entity.Cadastro
 import br.com.unip.cadastro.repository.entity.Documento
 import br.com.unip.cadastro.repository.entity.Endereco
@@ -18,15 +19,17 @@ import javax.transaction.Transactional
 
 
 @Repository
-class CadastroRepositoryBean(val pessoaRepository: IPessoaRepository,
-                             val cadastroEntityMapper: CadastroEntityMapper,
+class CadastroRepositoryBean(val cadastroEntityMapper: CadastroEntityMapper,
+                             val pessoaEntityMapper: PessoaEntityMapper,
                              val em: EntityManager) : ICadastroRepository {
 
     @Transactional
     override fun cadastrar(domain: CadastroDomain): String {
         val cadastro = cadastroEntityMapper.map(domain)
+        val pessoa = pessoaEntityMapper.map(domain.pessoa)
+        pessoa.adicionarCadastro(cadastro)
 
-        em.persist(cadastro)
+        em.persist(pessoa)
         return cadastro.uuid
     }
 
@@ -49,15 +52,6 @@ class CadastroRepositoryBean(val pessoaRepository: IPessoaRepository,
         query.setParameter("status", EStatusCadastro.COMPLETO)
 
         return query.singleResult as Long > 0
-    }
-
-    @Transactional
-    override fun atualizar(domain: CadastroDomain, uuid: String) {
-        val cadastro: Cadastro = this.buscarPorUUID(uuid)
-        cadastro.status = domain.status
-
-        pessoaRepository.atualizar(domain.pessoa, cadastro.getPessoa())
-        em.persist(cadastro)
     }
 
     private fun buscarPorUUID(uuid: String): Cadastro {
@@ -103,7 +97,10 @@ class CadastroRepositoryBean(val pessoaRepository: IPessoaRepository,
                 endereco.logradouro, endereco.numero)
     }
 
-    private fun map(documento: Documento): DocumentoDTO {
+    private fun map(documento: Documento?): DocumentoDTO? {
+        if (documento == null) {
+            return null
+        }
         return DocumentoDTO(documento.tipoDocumento, documento.numero)
     }
 

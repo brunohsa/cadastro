@@ -5,7 +5,6 @@ import javax.persistence.Entity
 
 @Entity
 class PessoaJuridica(nome: String,
-                     @Column val nomeFantasia: String,
+                     @Column val nomeFantasia: String?,
                      telefone: String,
-                     documento: Documento,
-                     endereco: Endereco?) : Pessoa(nome, telefone, documento, endereco)
+                     documento: Documento) : Pessoa(nome, telefone, documento)

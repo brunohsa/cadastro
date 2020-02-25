@@ -22,9 +22,8 @@ class Cadastro {
     @GeneratedValue(strategy = GenerationType.AUTO)
     var id: Long? = null
 
-    @OneToOne(fetch = FetchType.LAZY, optional = false)
-    @Cascade(PERSIST)
-    private val pessoa: Pessoa
+    @OneToOne(mappedBy = "cadastro")
+    private lateinit var pessoa: Pessoa
 
     @Column
     @Enumerated(EnumType.STRING)
@@ -33,8 +32,7 @@ class Cadastro {
     @Column
     val uuid: String = UUID.randomUUID().toString()
 
-    constructor(pessoa: Pessoa, status: EStatusCadastro) {
-        this.pessoa = pessoa
+    constructor(status: EStatusCadastro) {
         this.status = status
     }
 

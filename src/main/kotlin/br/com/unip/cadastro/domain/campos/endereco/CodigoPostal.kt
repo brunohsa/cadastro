@@ -3,25 +3,35 @@ package br.com.unip.cadastro.domain.campos.endereco
 import br.com.unip.cadastro.domain.campos.CampoNumerico
 import br.com.unip.cadastro.domain.campos.CampoObrigatorio
 import br.com.unip.cadastro.domain.campos.ICampo
+import br.com.unip.cadastro.exception.CampoObrigatorioException
+import br.com.unip.cadastro.exception.ECodigoErro.CAMPO_CEP_DEVE_SER_NUMERICO
+import br.com.unip.cadastro.exception.ECodigoErro.CAMPO_CEP_INVALIDO
+import br.com.unip.cadastro.exception.ECodigoErro.CAMPO_CEP_OBRIGATORIO
+import br.com.unip.cadastro.exception.ECodigoErro.CAMPO_LOGRADOURO_OBRIGATORIO
+import br.com.unip.cadastro.exception.ParametroInvalidoException
 
 class CodigoPostal : ICampo<String> {
 
-    private val nome: String
+    private val valor: String
 
-    constructor(nome: String?) {
-        //TODO tratar as exceptions corretamente
-        this.nome = validar(CampoNumerico(CampoObrigatorio(nome)).get())
+    constructor(valor: String?) {
+        try {
+            this.valor = validar(CampoNumerico(CampoObrigatorio(valor)).get())
+        } catch (e: CampoObrigatorioException) {
+            throw CampoObrigatorioException("CAMPO_CEP_OBRIGATORIO", CAMPO_CEP_OBRIGATORIO)
+        } catch (e: CampoObrigatorioException) {
+            throw CampoObrigatorioException("CAMPO_CEP_DEVE_SER_NUMERICO", CAMPO_CEP_DEVE_SER_NUMERICO)
+        }
     }
 
     private fun validar(cep: String): String {
         if (cep.length != 8) {
-            //TODO throw new CodigoPostalInvalidoException()
-            throw RuntimeException()
+            throw ParametroInvalidoException("CAMPO_CEP_INVALIDO", CAMPO_CEP_INVALIDO)
         }
         return cep
     }
 
     override fun get(): String {
-        return nome
+        return valor
     }
 }

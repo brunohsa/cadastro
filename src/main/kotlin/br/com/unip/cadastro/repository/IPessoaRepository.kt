@@ -5,9 +5,9 @@ import br.com.unip.cadastro.repository.entity.Pessoa
 
 interface IPessoaRepository {
 
-    fun criar(domain: IPessoaDomain): Pessoa
-
-    fun atualizar(domain: IPessoaDomain, pessoa: Pessoa): Pessoa
+    fun salvar(domain: IPessoaDomain): Pessoa
 
     fun buscar(id: Long): Pessoa
+
+    fun buscarPorCadastroUUID(uuid: String): Pessoa
 }

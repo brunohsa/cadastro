@@ -2,17 +2,23 @@ package br.com.unip.cadastro.domain.campos.endereco
 
 import br.com.unip.cadastro.domain.campos.CampoObrigatorio
 import br.com.unip.cadastro.domain.campos.ICampo
+import br.com.unip.cadastro.exception.CampoObrigatorioException
+import br.com.unip.cadastro.exception.ECodigoErro.CAMPO_BAIRRO_OBRIGATORIO
+import br.com.unip.cadastro.exception.ECodigoErro.CAMPO_CIDADE_OBRIGATORIO
 
 class Cidade : ICampo<String> {
 
-    private val nome: String
+    private val valor: String
 
-    constructor(nome: String?) {
-        //TODO tratar as exceptions corretamente
-        this.nome = CampoObrigatorio(nome).get()
+    constructor(valor: String?) {
+        try {
+            this.valor = CampoObrigatorio(valor).get()
+        } catch (e: CampoObrigatorioException) {
+            throw CampoObrigatorioException("CAMPO_CIDADE_OBRIGATORIO", CAMPO_CIDADE_OBRIGATORIO)
+        }
     }
 
     override fun get(): String {
-        return nome
+        return valor
     }
 }

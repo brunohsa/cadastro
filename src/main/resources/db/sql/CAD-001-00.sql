@@ -23,18 +23,28 @@ CREATE TABLE Endereco (
     PRIMARY KEY (id)
 );
 
+CREATE TABLE Cadastro (
+    id int NOT NULL AUTO_INCREMENT,
+    status varchar(11) NOT NULL,
+    uuid varchar(40) NOT NULL,
+
+    PRIMARY KEY (id)
+);
+
 CREATE TABLE Pessoa (
     id int NOT NULL AUTO_INCREMENT,
     nome varchar(100) NOT NULL,
     telefone varchar(11),
     documento_id int,
     endereco_id int,
+    cadastro_id int,
 
     PRIMARY KEY (id)
 );
 
 ALTER TABLE Pessoa ADD CONSTRAINT fk_documento FOREIGN KEY (documento_id) REFERENCES Documento (id);
 ALTER TABLE Pessoa ADD CONSTRAINT fk_endereco FOREIGN KEY (endereco_id) REFERENCES Endereco (id);
+ALTER TABLE Pessoa ADD CONSTRAINT fk_cadastro FOREIGN KEY (cadastro_id) REFERENCES Cadastro (id);
 
 CREATE TABLE PessoaFisica (
     id int NOT NULL,

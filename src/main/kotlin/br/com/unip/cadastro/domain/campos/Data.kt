@@ -21,7 +21,7 @@ class Data : ICampo<LocalDate?> {
                 this.data = LocalDate.parse(data, format)
             }
         } catch (ex: DateTimeParseException) {
-            throw ParametroInvalidoException("Formato da data inválido.", ECodigoErro.CAD012)
+            throw ParametroInvalidoException("Formato da data inválido.", ECodigoErro.FORMATO_DATA_INVALIDA)
         }
     }
 

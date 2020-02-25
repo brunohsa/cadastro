@@ -2,7 +2,7 @@ package br.com.unip.cadastro.repository.entity
 
 import br.com.unip.cadastro.repository.util.PersistenciaUtil
 import org.hibernate.annotations.Cascade
-import org.hibernate.annotations.CascadeType.PERSIST
+import org.hibernate.annotations.CascadeType.ALL
 import javax.persistence.Column
 import javax.persistence.Entity
 import javax.persistence.FetchType
@@ -29,23 +29,30 @@ open class Pessoa {
     var telefone: String?
 
     @OneToOne(fetch = FetchType.LAZY, optional = false)
-    @Cascade(PERSIST)
+    @Cascade(ALL)
     @JoinColumn(name = "documento_id")
-    private val documento: Documento
+    private var documento: Documento? = null
 
     @OneToOne(fetch = FetchType.LAZY, optional = false)
-    @Cascade(PERSIST)
+    @Cascade(ALL)
     @JoinColumn(name = "endereco_id")
-    private var endereco: Endereco?
+    private lateinit var endereco: Endereco
 
-    constructor(nome: String?, telefone: String?, documento: Documento, endereco: Endereco?) {
+    @OneToOne(fetch = FetchType.LAZY, optional = false)
+    @Cascade(ALL)
+    @JoinColumn(name = "cadastro_id")
+    private lateinit var cadastro: Cadastro
+
+    constructor(nome: String?, telefone: String?, documento: Documento?) {
         this.nome = nome
         this.telefone = telefone
         this.documento = documento
-        this.endereco = endereco
     }
 
-    fun getDocumento(): Documento {
+    fun getDocumento(): Documento? {
+        if (documento == null) {
+            return null
+        }
         return PersistenciaUtil.inicializarERemoverProxy(documento)
     }
 
@@ -53,7 +60,19 @@ open class Pessoa {
         return PersistenciaUtil.inicializarERemoverProxy(endereco)
     }
 
+    fun getCadastro(): Cadastro {
+        return PersistenciaUtil.inicializarERemoverProxy(cadastro)
+    }
+
     fun adicionarEndereco(endereco: Endereco) {
         this.endereco = endereco
+    }
+
+    fun adicionarCadastro(cadastro: Cadastro) {
+        this.cadastro = cadastro
+    }
+
+    fun adicionarDocumento(documento: Documento) {
+        this.documento = documento
     }
 }

@@ -4,5 +4,5 @@ import org.springframework.http.HttpStatus
 
 class CadastroNaoEncontradoException : CadastroException {
 
-    constructor() : super(ECodigoErro.CAD018, HttpStatus.NOT_FOUND, "Cadastro não encontrado.")
+    constructor() : super(ECodigoErro.CADASTRO_NAO_ENCONTRADO, HttpStatus.NOT_FOUND, "Cadastro não encontrado.")
 }

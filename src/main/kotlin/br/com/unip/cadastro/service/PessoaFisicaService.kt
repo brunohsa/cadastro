@@ -2,45 +2,32 @@ package br.com.unip.cadastro.service
 
 import br.com.unip.cadastro.domain.CadastroDomain
 import br.com.unip.cadastro.domain.IPessoaDomain
-import br.com.unip.cadastro.dto.CadastroDTO
+import br.com.unip.cadastro.dto.PessoaFisicaAlteradaDTO
 import br.com.unip.cadastro.dto.PessoaFisicaDTO
-import br.com.unip.cadastro.exception.CadastroNaoEncontradoException
-import br.com.unip.cadastro.exception.CampoObrigatorioException
-import br.com.unip.cadastro.exception.ECodigoErro
-import br.com.unip.cadastro.mapper.IMapper
-import br.com.unip.cadastro.mapper.PessoaCompletaDomainMapper
-import br.com.unip.cadastro.mapper.PessoaFisicaParcialDomainMapper
+import br.com.unip.cadastro.mapper.PessoaDomainMapper
+import br.com.unip.cadastro.mapper.PessoaFisicaAlteradaDomainMapper
 import br.com.unip.cadastro.repository.ICadastroRepository
-import br.com.unip.cadastro.repository.entity.enums.EStatusCadastro
+import br.com.unip.cadastro.repository.IPessoaFisicaRepository
 import br.com.unip.cadastro.repository.entity.enums.EStatusCadastro.COMPLETO
-import br.com.unip.cadastro.repository.entity.enums.EStatusCadastro.PARCIAL
 import org.springframework.stereotype.Service
 
 @Service
-class PessoaFisicaService(val pessoaParcialMapper: PessoaFisicaParcialDomainMapper,
-                          val pessoaCompletaMapper: PessoaCompletaDomainMapper,
-                          val cadastroRepository: ICadastroRepository) : IPessoaFisicaService {
+class PessoaFisicaService(val pessoaDomainMapper: PessoaDomainMapper,
+                          val pessoaAlteradaDomainMapper: PessoaFisicaAlteradaDomainMapper,
+                          val cadastroRepository: ICadastroRepository,
+                          val pessoaFisicaRepository: IPessoaFisicaRepository) : IPessoaFisicaService {
 
     override fun cadastrar(dto: PessoaFisicaDTO): String {
-        if (cadastroEhCompleto(dto)) {
-            return this.cadastrar(dto, pessoaCompletaMapper as IMapper<PessoaFisicaDTO, IPessoaDomain>, COMPLETO)
-        }
-        return this.cadastrar(dto, pessoaParcialMapper as IMapper<PessoaFisicaDTO, IPessoaDomain>, PARCIAL)
+        val domain: IPessoaDomain = pessoaDomainMapper.map(dto)
+        return cadastroRepository.cadastrar(CadastroDomain(domain, COMPLETO))
     }
 
-    private fun cadastrar(dto: PessoaFisicaDTO, mapper: IMapper<PessoaFisicaDTO, IPessoaDomain>, status: EStatusCadastro): String {
-        val domain: IPessoaDomain = mapper.map(dto)
-        return cadastroRepository.cadastrar(CadastroDomain(domain, status))
+    override fun alterar(uuid: String, dto: PessoaFisicaAlteradaDTO) {
+        val domain = pessoaAlteradaDomainMapper.map(dto)
+        pessoaFisicaRepository.alterar(uuid, domain)
     }
 
-    private fun cadastroEhCompleto(dto: PessoaFisicaDTO): Boolean {
-        return !dto.cpf.isNullOrEmpty() && !dto.nome.isNullOrEmpty()
-    }
-
-    override fun buscar(uuid: String?): CadastroDTO {
-        if (uuid.isNullOrEmpty()) {
-            throw CampoObrigatorioException("O identificador do cadastro é obrigatório", ECodigoErro.CAD003)
-        }
-        return cadastroRepository.buscar(uuid) ?: throw CadastroNaoEncontradoException()
+    override fun buscarPorCadastroUUID(cadastroUUID: String): PessoaFisicaDTO {
+        return pessoaFisicaRepository.buscarPorCadastroUUID(cadastroUUID)
     }
 }
