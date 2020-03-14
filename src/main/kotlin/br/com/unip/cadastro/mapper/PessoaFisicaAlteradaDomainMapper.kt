@@ -11,7 +11,6 @@ class PessoaFisicaAlteradaDomainMapper : IMapper<PessoaFisicaAlteradaDTO, Pessoa
         return PessoaFisicaAlteradaDomain(
                 objeto.sobrenome,
                 objeto.telefone,
-                objeto.dataNascimento,
                 objeto.cpf
         )
     }

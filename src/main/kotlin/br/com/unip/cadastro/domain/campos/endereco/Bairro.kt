@@ -15,7 +15,7 @@ class Bairro : ICampo<String> {
         try {
             this.valor = CampoObrigatorio(valor).get()
         } catch (e: CampoObrigatorioException) {
-            throw CampoObrigatorioException("CAMPO_BAIRRO_OBRIGATORIO", CAMPO_BAIRRO_OBRIGATORIO)
+            throw CampoObrigatorioException(CAMPO_BAIRRO_OBRIGATORIO)
         }
     }
 

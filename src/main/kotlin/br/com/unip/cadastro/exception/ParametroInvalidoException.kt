@@ -1,10 +1,11 @@
 package br.com.unip.cadastro.exception
 
-import org.springframework.http.HttpStatus
+import br.com.unip.cadastro.exception.ECodigoErro.PARAMETRO_INVALIDO
+import org.springframework.http.HttpStatus.BAD_REQUEST
 
-class ParametroInvalidoException : CadastroException {
+class ParametroInvalidoException : CadastroBaseException {
 
-    constructor(mensagem: String) : this(mensagem, ECodigoErro.PARAMETRO_INVALIDO)
+    constructor() : this(PARAMETRO_INVALIDO)
 
-    constructor(mensagem: String, codigoErro: ECodigoErro) : super(codigoErro, HttpStatus.BAD_REQUEST, mensagem)
+    constructor(codigoErro: ECodigoErro) : super(codigoErro, BAD_REQUEST)
 }

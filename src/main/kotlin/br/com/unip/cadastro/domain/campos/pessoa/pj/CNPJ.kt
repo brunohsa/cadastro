@@ -5,7 +5,8 @@ import br.com.unip.cadastro.domain.campos.CampoObrigatorio
 import br.com.unip.cadastro.domain.campos.ICampo
 import br.com.unip.cadastro.exception.CampoNumericoException
 import br.com.unip.cadastro.exception.CampoObrigatorioException
-import br.com.unip.cadastro.exception.ECodigoErro
+import br.com.unip.cadastro.exception.ECodigoErro.CNPJ_INVALIDO
+import br.com.unip.cadastro.exception.ECodigoErro.CNPJ_OBRIGATORIO
 import br.com.unip.cadastro.exception.ParametroInvalidoException
 
 class CNPJ : ICampo<String> {
@@ -16,9 +17,9 @@ class CNPJ : ICampo<String> {
         try {
             this.cnpj = cnpjValido(CampoNumerico(CampoObrigatorio(cnpj)).get())
         } catch (e: CampoNumericoException) {
-            throw CampoNumericoException("CNPJ inválido", ECodigoErro.CNPJ_INVALIDO)
+            throw CampoNumericoException(CNPJ_INVALIDO)
         } catch (e: CampoObrigatorioException) {
-            throw CampoObrigatorioException("CNPJ é obrigatório", ECodigoErro.CNPJ_OBRIGATORIO)
+            throw CampoObrigatorioException(CNPJ_OBRIGATORIO)
         }
     }
 
@@ -79,7 +80,7 @@ class CNPJ : ICampo<String> {
         cnpjCalc += if (dig != 10 && dig != 11) Integer.toString(dig) else "0"
 
         if (value != cnpjCalc) {
-            throw ParametroInvalidoException("CNPJ inválido",  ECodigoErro.CNPJ_INVALIDO)
+            throw ParametroInvalidoException(CNPJ_INVALIDO)
         }
 
         return original

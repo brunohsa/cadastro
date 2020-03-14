@@ -25,9 +25,9 @@ class Telefone : ICampo<String> {
             try {
                 this.telefone = CampoTamanhoLimite(CampoNumerico(CampoOpcional(telefone)), TAMANHO_LIMITE).get()
             } catch (e: CampoNumericoException) {
-                throw CampoNumericoException("CAMPO_TELEFONE_DEVE_SER_NUMERICO", CAMPO_TELEFONE_DEVE_SER_NUMERICO)
+                throw CampoNumericoException(CAMPO_TELEFONE_DEVE_SER_NUMERICO)
             } catch (e: CampoExcedeTamanhoLimiteException) {
-                throw CampoExcedeTamanhoLimiteException("TELEFONE_EXCEDE_TAMANHO_LIMITE", CAMPO_TELEFONE_EXCEDE_TAMANHO_LIMITE)
+                throw CampoExcedeTamanhoLimiteException(CAMPO_TELEFONE_EXCEDE_TAMANHO_LIMITE)
             }
         }
     }

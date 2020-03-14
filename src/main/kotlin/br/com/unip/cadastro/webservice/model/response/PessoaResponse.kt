@@ -10,4 +10,4 @@ import com.fasterxml.jackson.annotation.JsonProperty
 class PessoaResponse(@JsonProperty(value = "nome") val nome: String,
                      @JsonProperty(value = "sobrenome") var sobrenome: String?,
                      @JsonProperty(value = "telefone") var telefone: String?,
-                     @JsonProperty(value = "data_nascimento") var dataNascimento: String?)
+                     @JsonProperty(value = "documento") var documentoResponse: DocumentoResponse?)

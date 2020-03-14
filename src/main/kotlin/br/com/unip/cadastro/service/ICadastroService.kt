@@ -7,7 +7,7 @@ interface ICadastroService {
 
     fun buscar(uuid: String): CadastroDTO
 
-    fun adicionarEndereco(dto: EnderecoDTO, uuid: String)
+    fun adicionarEndereco(dto: EnderecoDTO)
 
-    fun buscarEndereco(uuid: String): EnderecoDTO?
+    fun buscarEndereco(): EnderecoDTO?
 }

@@ -1,12 +1,11 @@
 package br.com.unip.cadastro.exception
 
-import org.springframework.http.HttpStatus
+import br.com.unip.cadastro.exception.ECodigoErro.CAMPO_TAMANHO_LIMITE_EXCEDENTE
+import org.springframework.http.HttpStatus.BAD_REQUEST
 
-class CampoExcedeTamanhoLimiteException : CadastroException {
+class CampoExcedeTamanhoLimiteException : CadastroBaseException {
 
-    constructor() : super(ECodigoErro.CAMPO_TAMANHO_LIMITE_EXCEDENTE, HttpStatus.BAD_REQUEST)
+    constructor() : this(CAMPO_TAMANHO_LIMITE_EXCEDENTE)
 
-    constructor(mensagem: String) : this(mensagem, ECodigoErro.CAMPO_TAMANHO_LIMITE_EXCEDENTE)
-
-    constructor(mensagem: String, codigoErro: ECodigoErro) : super(codigoErro, HttpStatus.BAD_REQUEST, mensagem)
+    constructor(codigoErro: ECodigoErro) : super(codigoErro, BAD_REQUEST)
 }

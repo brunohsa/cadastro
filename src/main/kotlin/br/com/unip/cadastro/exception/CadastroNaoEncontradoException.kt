@@ -2,7 +2,7 @@ package br.com.unip.cadastro.exception
 
 import org.springframework.http.HttpStatus
 
-class CadastroNaoEncontradoException : CadastroException {
+class CadastroNaoEncontradoException : CadastroBaseException {
 
-    constructor() : super(ECodigoErro.CADASTRO_NAO_ENCONTRADO, HttpStatus.NOT_FOUND, "Cadastro não encontrado.")
+    constructor() : super(ECodigoErro.CADASTRO_NAO_ENCONTRADO, HttpStatus.BAD_REQUEST)
 }

@@ -48,8 +48,7 @@ ALTER TABLE Pessoa ADD CONSTRAINT fk_cadastro FOREIGN KEY (cadastro_id) REFERENC
 
 CREATE TABLE PessoaFisica (
     id int NOT NULL,
-    sobrenome varchar(50),
-    dataNascimento date
+    sobrenome varchar(50)
 );
 
 CREATE TABLE PessoaJuridica (

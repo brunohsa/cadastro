@@ -22,7 +22,7 @@ class PessoaJuridicaService(val pessoaCompletaMapper: PessoaDomainMapper,
 
     override fun buscar(uuid: String?): CadastroDTO {
         if (uuid.isNullOrEmpty()) {
-            throw CampoObrigatorioException("O identificador do cadastro é obrigatório", ECodigoErro.UUID_CADASTRO_OBRIGATORIO)
+            throw CampoObrigatorioException(ECodigoErro.UUID_CADASTRO_OBRIGATORIO)
         }
         return cadastroRepository.buscar(uuid) ?: throw CadastroNaoEncontradoException()
     }

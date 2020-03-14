@@ -13,7 +13,7 @@ class RazaoSocial : ICampo<String> {
         try {
             this.valor = CampoObrigatorio(valor).get()
         } catch (e: CampoObrigatorioException) {
-            throw CampoObrigatorioException("Razao social obrigatorio", RAZAO_SOCIAL_OBRIGATORIO)
+            throw CampoObrigatorioException(RAZAO_SOCIAL_OBRIGATORIO)
         }
     }
 

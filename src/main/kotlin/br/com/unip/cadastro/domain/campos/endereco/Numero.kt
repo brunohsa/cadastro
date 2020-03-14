@@ -16,9 +16,9 @@ class Numero : ICampo<String> {
         try {
             this.valor = CampoNumerico(CampoObrigatorio(valor)).get()
         } catch (e: CampoObrigatorioException) {
-            throw CampoObrigatorioException("CAMPO_NUMERO_OBRIGATORIO", CAMPO_LOGRADOURO_OBRIGATORIO)
+            throw CampoObrigatorioException(CAMPO_LOGRADOURO_OBRIGATORIO)
         } catch (e : CampoNumericoException) {
-            throw CampoNumericoException("CAMPO_NUMERO_DEVE_SER_NUMERICO", CAMPO_NUMERO_DEVE_SER_NUMERICO)
+            throw CampoNumericoException(CAMPO_NUMERO_DEVE_SER_NUMERICO)
         }
     }
 

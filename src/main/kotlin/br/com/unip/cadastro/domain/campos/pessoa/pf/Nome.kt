@@ -13,7 +13,7 @@ class Nome : ICampo<String> {
         try {
             this.nome = CampoObrigatorio(nome).get()
         } catch (e : CampoObrigatorioException) {
-            throw CampoObrigatorioException("Nome obrigatorio", NOME_OBRIGATORIO)
+            throw CampoObrigatorioException(NOME_OBRIGATORIO)
         }
     }
 

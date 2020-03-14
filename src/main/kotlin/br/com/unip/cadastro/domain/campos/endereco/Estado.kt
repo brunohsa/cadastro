@@ -13,7 +13,7 @@ class Estado : ICampo<String> {
         try {
             this.valor = CampoObrigatorio(valor).get()
         } catch (e: CampoObrigatorioException) {
-            throw CampoObrigatorioException("CAMPO_ESTADO_OBRIGATORIO", CAMPO_ESTADO_OBRIGATORIO)
+            throw CampoObrigatorioException(CAMPO_ESTADO_OBRIGATORIO)
         }
     }
 

@@ -7,7 +7,7 @@ interface IPessoaFisicaService {
 
     fun cadastrar(dto: PessoaFisicaDTO): String
 
-    fun alterar(uuid: String, dto: PessoaFisicaAlteradaDTO)
+    fun alterar(dto: PessoaFisicaAlteradaDTO)
 
-    fun buscarPorCadastroUUID(cadastroUUID: String): PessoaFisicaDTO
+    fun buscar(): PessoaFisicaDTO
 }

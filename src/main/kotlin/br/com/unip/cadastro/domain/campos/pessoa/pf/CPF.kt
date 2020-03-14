@@ -5,7 +5,8 @@ import br.com.unip.cadastro.domain.campos.CampoObrigatorio
 import br.com.unip.cadastro.domain.campos.ICampo
 import br.com.unip.cadastro.exception.CampoNumericoException
 import br.com.unip.cadastro.exception.CampoObrigatorioException
-import br.com.unip.cadastro.exception.ECodigoErro
+import br.com.unip.cadastro.exception.ECodigoErro.CPF_INVALIDO
+import br.com.unip.cadastro.exception.ECodigoErro.CPF_OBRIGATORIO
 import br.com.unip.cadastro.exception.ParametroInvalidoException
 
 class CPF : ICampo<String?> {
@@ -20,9 +21,9 @@ class CPF : ICampo<String?> {
                 this.cpf = cpfValido(CampoNumerico(CampoObrigatorio(cpf)).get())
             }
         } catch (e: CampoNumericoException) {
-            throw CampoNumericoException("CPF inválido", ECodigoErro.CPF_INVALIDO)
+            throw CampoNumericoException(CPF_INVALIDO)
         } catch (e: CampoObrigatorioException) {
-            throw CampoObrigatorioException("CPF é obrigatório", ECodigoErro.CPF_OBRIGATORIO)
+            throw CampoObrigatorioException(CPF_OBRIGATORIO)
         }
     }
 
@@ -61,7 +62,7 @@ class CPF : ICampo<String?> {
         val nDigResult = digit1.toString() + digit2.toString()
 
         if (nDigVerific != nDigResult) {
-            throw ParametroInvalidoException("CPF inválido", ECodigoErro.CPF_INVALIDO)
+            throw ParametroInvalidoException(CPF_INVALIDO)
         }
 
         return cpf

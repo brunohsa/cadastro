@@ -1,12 +1,11 @@
 package br.com.unip.cadastro.exception
 
-import org.springframework.http.HttpStatus
+import br.com.unip.cadastro.exception.ECodigoErro.DATA_DEVE_SER_RETROATIVA
+import org.springframework.http.HttpStatus.BAD_REQUEST
 
-class DataPassadaException : CadastroException {
+class DataPassadaException : CadastroBaseException {
 
-    constructor() : super(ECodigoErro.DATA_DEVE_SER_RETROATIVA, HttpStatus.BAD_REQUEST)
+    constructor() : this(DATA_DEVE_SER_RETROATIVA)
 
-    constructor(mensagem: String) : this(mensagem, ECodigoErro.DATA_DEVE_SER_RETROATIVA)
-
-    constructor(mensagem: String, codigoErro: ECodigoErro) : super(codigoErro, HttpStatus.BAD_REQUEST, mensagem)
+    constructor(codigoErro: ECodigoErro) : super(codigoErro, BAD_REQUEST)
 }

@@ -1,11 +1,11 @@
 package br.com.unip.cadastro.security
 
+import br.com.unip.cadastro.security.filter.AuthenticationFilter
 import br.com.unip.cadastro.security.filter.CorsFilterCustom
-import br.com.unip.cadastro.security.filter.JWTAuthenticationFilter
+import org.springframework.context.MessageSource
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
-import org.springframework.security.config.annotation.web.builders.WebSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
@@ -13,11 +13,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-class SecurityConfiguration : WebSecurityConfigurerAdapter() {
-
-    override fun configure(web: WebSecurity) {
-        web.ignoring().antMatchers("/v1/pessoa-fisica/cadastrar", "/v1/pessoa-juridica/**")
-    }
+class SecurityConfiguration(val messageSource: MessageSource) : WebSecurityConfigurerAdapter() {
 
     @Throws(Exception::class)
     public override fun configure(http: HttpSecurity) {
@@ -29,6 +25,6 @@ class SecurityConfiguration : WebSecurityConfigurerAdapter() {
                 .anyRequest().authenticated()
                 .and()
                 .addFilterBefore(CorsFilterCustom(), UsernamePasswordAuthenticationFilter::class.java)
-                .addFilterBefore(JWTAuthenticationFilter(), UsernamePasswordAuthenticationFilter::class.java)
+                .addFilterBefore(AuthenticationFilter(messageSource), UsernamePasswordAuthenticationFilter::class.java)
     }
 }

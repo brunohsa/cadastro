@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/CadastroRepositoryBean.kt" line="23" mnemonic="0" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/CadastroRepository.kt" line="23" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60785265-7743-4b00-8f7b-94500422d85a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaDomainMapper.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/CampoTamanhoLimite.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/CampoTamanhoLimite.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/PessoaFisicaAlteradaDomain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/PessoaFisicaAlteradaDomain.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/PessoaFisicaDomain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/PessoaFisicaDomain.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/Data.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/Data.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Bairro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Bairro.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Cidade.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Cidade.kt" afterDir="false" />
@@ -15,43 +15,40 @@
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Estado.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Estado.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Logradouro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Logradouro.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Numero.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Numero.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/CampoCNPJValido.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pj/CNPJ.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/CampoCPFValido.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/CPF.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/Nome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/Nome.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/Sobrenome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/Sobrenome.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/Telefone.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/Telefone.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/completo/CNPJCompleto.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/completo/CPFCompleto.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/completo/DataNascimentoCompleto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/DataNascimento.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/parcial/CPFParcial.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/parcial/DataNascimentoParcial.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/completo/IPessoaCompletaDomain.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/completo/PessoaFisicaCompletaDomain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/PessoaFisicaDomain.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/completo/PessoaJuridicaCompletaDomain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/PessoaJuridicaDomain.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/parcial/PessoaFisicaParcialDomain.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/PessoaDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/PessoaDTO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/CPF.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/CPF.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/DataNascimento.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/Nome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/Nome.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pj/CNPJ.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pj/CNPJ.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pj/RazaoSocial.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pj/RazaoSocial.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/EnderecoCoordenadasDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/CoordenadasDTO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/EnderecoDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/EnderecoDTO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/PessoaFisicaAlteradaDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/PessoaFisicaAlteradaDTO.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/PessoaFisicaDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/PessoaFisicaDTO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CadastroException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CadastroBaseException.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CadastroNaoEncontradoException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CadastroNaoEncontradoException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoExcedeTamanhoLimiteException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoExcedeTamanhoLimiteException.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoNumericoException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoNumericoException.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoObrigatorioException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoObrigatorioException.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/DataPassadaException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/DataPassadaException.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/ECodigoErro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/ECodigoErro.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/HandlerException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/HandlerException.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/ParametroInvalidoException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/ParametroInvalidoException.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/CadastroEntityMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/CadastroEntityMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaCompletaDomainMapper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaCompletaEntityMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaEntityMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaFisicaParcialDomainMapper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaFisicaParcialEntityMapper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/CadastroRepositoryBean.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/CadastroRepositoryBean.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/ICadastroRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/ICadastroRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/IPessoaRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/IPessoaRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/PessoaRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/PessoaRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/Cadastro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/Cadastro.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/Pessoa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/Pessoa.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/EnderecoDomainMapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaDomainMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaDomainMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaEntityMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaEntityMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaFisicaAlteradaDomainMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaFisicaAlteradaDomainMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/CadastroRepositoryBean.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/CadastroRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/ILocalizacaoRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/ILocalizacaoRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/IPessoaFisicaRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/IPessoaFisicaRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/IPessoaRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/LocalizacaoRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/LocalizacaoRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/PessoaFisicaRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/PessoaFisicaRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/PessoaRepository.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/PessoaFisica.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/PessoaFisica.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/PessoaJuridica.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/PessoaJuridica.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/SecurityConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/SecurityConfiguration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/filter/JWTAuthenticationFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/filter/AuthenticationFilter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/filter/Permissoes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/Permissoes.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/CadastroService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/CadastroService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/ICadastroService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/ICadastroService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/IPessoaFisicaService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/IPessoaFisicaService.kt" afterDir="false" />
@@ -60,71 +57,113 @@
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/CadastroWS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/CadastroWS.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/PessoaFisicaWS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/PessoaFisicaWS.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/PessoaJuridicaWS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/PessoaJuridicaWS.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/request/CompletarDadosPFRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/request/AlterarDadosPFRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/CadastroResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/CadastroResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/request/PessoaFisicaRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/request/PessoaFisicaRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/Erro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/erro/Erro.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/PessoaResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/PessoaResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/Response.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/erro/ResponseError.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/db/sql/CAD-001-00.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/sql/CAD-001-00.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/sql/CAD-002-00.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cadastro-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cadastro-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/CampoTamanhoLimite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/CampoTamanhoLimite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Bairro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Bairro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Cidade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Cidade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/CodigoPostal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/CodigoPostal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Estado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Estado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Logradouro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Logradouro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Numero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Numero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/CampoCNPJValido.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/CampoCPFValido.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/Nome.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/Sobrenome.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/Telefone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/Telefone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/completo/CNPJCompleto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/completo/CPFCompleto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/completo/DataNascimentoCompleto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/parcial/CPFParcial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/parcial/DataNascimentoParcial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/completo/IPessoaCompletaDomain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/completo/PessoaFisicaCompletaDomain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/completo/PessoaJuridicaCompletaDomain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/parcial/PessoaFisicaParcialDomain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/dto/PessoaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/dto/PessoaDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/dto/PessoaFisicaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/dto/PessoaFisicaDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/CadastroNaoEncontradoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/CadastroNaoEncontradoException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/CampoNumericoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/CampoNumericoException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/CampoObrigatorioException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/CampoObrigatorioException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/DataPassadaException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/DataPassadaException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/ECodigoErro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/ECodigoErro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/HandlerException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/HandlerException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/ParametroInvalidoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/ParametroInvalidoException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/mapper/CadastroEntityMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/mapper/CadastroEntityMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/mapper/PessoaCompletaDomainMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/mapper/PessoaCompletaEntityMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/mapper/PessoaEntityMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/mapper/PessoaEntityMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/mapper/PessoaFisicaParcialDomainMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/mapper/PessoaFisicaParcialEntityMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/CadastroRepositoryBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/CadastroRepositoryBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/ICadastroRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/ICadastroRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/IPessoaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/IPessoaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/PessoaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/PessoaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/Cadastro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/Cadastro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/Pessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/Pessoa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/PessoaFisica.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/PessoaFisica.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/PessoaJuridica.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/PessoaJuridica.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/security/SecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/CadastroService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/CadastroService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/ICadastroService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/ICadastroService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/IPessoaFisicaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/IPessoaFisicaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/PessoaFisicaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/PessoaFisicaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/PessoaJuridicaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/PessoaJuridicaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/CadastroWS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/CadastroWS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/PessoaFisicaWS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/PessoaFisicaWS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/PessoaJuridicaWS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/PessoaJuridicaWS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/request/CompletarDadosPFRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/response/CadastroResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/response/CadastroResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/response/PessoaResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/response/PessoaResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/cadastro.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/StartApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/StartApplicationKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/CadastroDomain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/EnderecoDomain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/IPessoaDomain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/PessoaFisicaAlteradaDomain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/PessoaFisicaDomain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/PessoaJuridicaDomain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/CampoNumerico.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/CampoObrigatorio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/CampoOpcional.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/CampoTamanhoLimite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/DataPassada.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/ICampo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Bairro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Cidade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/CodigoPostal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Estado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Logradouro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/endereco/Numero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/Telefone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/pf/CPF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/pf/DataNascimento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/pf/Nome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/pf/Sobrenome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/pj/CNPJ.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/pj/NomeFantasia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/domain/campos/pessoa/pj/RazaoSocial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/dto/CadastroDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/dto/DocumentoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/dto/EnderecoCoordenadasDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/dto/EnderecoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/dto/IPessoaDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/dto/PessoaDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/dto/PessoaFisicaAlteradaDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/dto/PessoaFisicaDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/dto/PessoaJuridicaDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/CadastroException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/CadastroNaoEncontradoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/CampoExcedeTamanhoLimiteException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/CampoNumericoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/CampoObrigatorioException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/DataPassadaException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/ECodigoErro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/HandlerException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/IntegracaoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/exception/ParametroInvalidoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/mapper/CadastroEntityMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/mapper/EnderecoDomainMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/mapper/IMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/mapper/PessoaDomainMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/mapper/PessoaEntityMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/mapper/PessoaFisicaAlteradaDomainMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/CadastroRepositoryBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/ICadastroRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/ILocalizacaoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/IPessoaFisicaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/IPessoaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/IRestRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/LocalizacaoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/PessoaFisicaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/PessoaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/RestRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/Cadastro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/Documento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/Endereco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/Pessoa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/PessoaFisica.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/PessoaJuridica.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/enums/EStatusCadastro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/entity/enums/ETipoDocumento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/util/PersistenciaUtil$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/repository/util/PersistenciaUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/security/SecurityConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/security/filter/CorsFilterCustom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/security/filter/JWTAuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/security/filter/Permissoes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/CadastroService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/ICadastroService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/IPessoaFisicaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/IPessoaJuridicaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/PessoaFisicaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/service/PessoaJuridicaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/CadastroWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/PessoaFisicaWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/PessoaJuridicaWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/request/AlterarDadosPFRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/request/EnderecoRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/request/PessoaFisicaRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/request/PessoaJuridicaRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/response/CadastroResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/response/DocumentoResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/response/EnderecoResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/response/Erro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/response/PessoaResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cadastro/webservice/model/response/Response.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/db/sql/CAD-001-00.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/sql/CAD-001-00.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/sql/CAD-002-00.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/messages.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -136,50 +175,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/PessoaFisicaService.kt">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/CadastroWS.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+            <state relative-caret-position="184">
+              <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
               <folding>
-                <element signature="e#38#607#0" expanded="true" />
+                <element signature="e#41#1072#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/PessoaFisicaWS.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/CadastroRepository.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="39" column="52" lean-forward="true" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/CadastroWS.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/PessoaFisicaRepository.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="56" column="94" selection-start-line="56" selection-start-column="94" selection-end-line="56" selection-end-column="94" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/PessoaFisicaDTO.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+            <state relative-caret-position="239">
+              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -200,11 +212,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>::class.qualifiedName</find>
-      <find>stra</find>
-      <find>tempo.expiracao</find>
-      <find>@Value(</find>
-      <find>LoginWS</find>
       <find>/autenticar</find>
       <find>request</find>
       <find>firebase.oauth.auth.url</find>
@@ -227,9 +234,14 @@
       <find>/v1/pessoa-fisica</find>
       <find>JWTAuthenticationFilter</find>
       <find>handlerE</find>
-      <find>late</find>
       <find>Handler</find>
       <find>SecurityContextHolder</find>
+      <find>@Va</find>
+      <find>late</find>
+      <find>handler</find>
+      <find>@Path</find>
+      <find>017</find>
+      <find>028</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -238,57 +250,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/DataNascimento.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pj/CNPJ.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CadastroNaoEncontradoException.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoNumericoException.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoObrigatorioException.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/DataPassadaException.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/filter/Permissoes.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/PessoaJuridicaWS.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/erro/Response.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/erro/ResponseError.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaDomainMapper.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CadastroException.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/PessoaJuridicaService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/Nome.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/Sobrenome.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoExcedeTamanhoLimiteException.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/CampoTamanhoLimite.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pj/RazaoSocial.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/Telefone.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoObrigatorioException.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Bairro.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/Nome.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoExcedeTamanhoLimiteException.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/Telefone.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoNumericoException.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Cidade.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/ICampo.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/CodigoPostal.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/ParametroInvalidoException.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/Data.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Estado.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Logradouro.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Numero.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/CodigoPostal.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/ECodigoErro.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Estado.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/request/CompletarDadosPFRequest.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/request/AlterarDadosPFRequest.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/builder/PessoaFisicaDTOBuilder.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaAlteradaDomainMapper.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/IPessoaRepository.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/PessoaRepository.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/Pessoa.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/ICadastroRepository.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/CPF.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pj/CNPJ.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pj/RazaoSocial.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CadastroBaseException.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/DataPassadaException.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/DocumentoJaCadastradoException.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/erro/Erro.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/HandlerException.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/filter/JWTAuthenticationFilter.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/TokenExpiradoException.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/TokenInvalidoException.kt" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages.properties" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/SecurityConfiguration.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/LocalizacaoRepository.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/EnderecoCoordenadasDTO.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/CoordenadasDTO.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/EnderecoDTO.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/EnderecoDomainMapper.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/filter/AuthenticationFilter.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/CadastroRepositoryBean.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/CadastroRepository.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/erro/EMicroservice.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/ICadastroService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/PessoaFisicaAlteradaDomain.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaFisicaAlteradaDomainMapper.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/PessoaJuridicaWS.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/CadastroService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/IntegracaoException.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/PessoaFisicaAlteradaDTO.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaDomainMapper.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/IPessoaFisicaRepository.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/ECodigoErro.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/UsuarioNaoPossuiCadastroException.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CadastroNaoEncontradoException.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/IPessoaFisicaService.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/PessoaFisicaService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/CadastroResponse.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/PessoaResponse.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/filter/Permissoes.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/SecurityConfiguration.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/CadastroWS.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/filter/JWTAuthenticationFilter.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/HandlerException.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/PessoaFisicaWS.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/PessoaFisicaDTO.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/PessoaFisicaRepository.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/CadastroWS.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/CadastroService.kt" />
       </list>
     </option>
   </component>
@@ -300,9 +312,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="-2" />
-    <option name="width" value="1366" />
-    <option name="height" value="770" />
+    <option name="x" value="1409" />
+    <option name="y" value="25" />
+    <option name="width" value="1557" />
+    <option name="height" value="875" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -354,80 +367,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="cadastro" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cadastro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cadastro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="cadastro" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cadastro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cadastro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="cadastro" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cadastro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cadastro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="cadastro" type="462c0819:PsiDirectoryNode" />
               <item name="webservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cadastro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cadastro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="cadastro" type="462c0819:PsiDirectoryNode" />
-              <item name="webservice" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cadastro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cadastro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="cadastro" type="462c0819:PsiDirectoryNode" />
-              <item name="webservice" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="response" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cadastro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cadastro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cadastro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cadastro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cadastro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cadastro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -436,32 +376,32 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582318983424" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584035450831" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain" />
-    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/br/com/unip/cardapio/autenticacao-lib/1.0-SNAPSHOT/autenticacao-lib-1.0-SNAPSHOT.jar!/br/com/unip/cardapio/security" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/br/com/unip/cardapio/autenticacao-lib/1.0-SNAPSHOT/autenticacao-lib-1.0-SNAPSHOT.jar!/" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="br.com.unip.cadastro.exception" />
+      <recent name="br.com.unip.cadastro.webservice.model.response.erro" />
       <recent name="br.com.unip.cadastro.mapper" />
       <recent name="br.com.unip.cadastro.domain" />
       <recent name="br.com.unip.cadastro.repository" />
-      <recent name="br.com.unip.cadastro.builder" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="br.com.unip.cadastro.webservice.model.response.erro" />
+      <recent name="br.com.unip.cadastro.security" />
       <recent name="br.com.unip.cadastro.domain.campos.pessoa.pj" />
       <recent name="br.com.unip.cadastro.domain.campos.pessoa.pf" />
       <recent name="br.com.unip.cadastro.domain.campos.pessoa" />
-      <recent name="br.com.unip.cadastro.domain" />
-      <recent name="br.com.unip.cadastro.repository" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/service" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/db/sql" />
-      <recent name="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -524,7 +464,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="25" width="1323" height="743" extended-state="6" />
+    <frame x="1409" y="25" width="1557" height="875" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -532,18 +472,18 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.52231795" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.3467902" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info id="DB Browser" order="7" weight="0.32967892" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49966952" weight="0.3257329" />
+      <window_info id="DB Browser" order="7" weight="0.32958305" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49966952" weight="0.44251338" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5016545" side_tool="true" weight="0.31769437" />
-      <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49966952" weight="0.15798046" />
+      <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49966952" weight="0.1541555" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="DB Execution Console" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3257329" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3243968" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.38377535" />
-      <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.49834546" weight="0.42996743" />
+      <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.49834546" weight="0.42761394" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -563,18 +503,18 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.52231795" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.3467902" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info id="DB Browser" order="7" weight="0.32967892" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49966952" weight="0.3257329" />
+      <window_info id="DB Browser" order="7" weight="0.32958305" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49966952" weight="0.44251338" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5016545" side_tool="true" weight="0.31769437" />
-      <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49966952" weight="0.15798046" />
+      <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49966952" weight="0.1541555" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="DB Execution Console" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3257329" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3243968" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.38377535" />
-      <window_info active="true" anchor="bottom" id="Debug" order="8" sideWeight="0.49834546" visible="true" weight="0.42996743" />
+      <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.49834546" weight="0.42761394" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -588,6 +528,16 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="right" x="0" y="0" width="339" height="675" id="Documentation" order="8" side_tool="true" weight="0.32958305" />
     </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -628,12 +578,6 @@
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/RestRepository.kt</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -644,411 +588,413 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>pessoaFisicaService.buscarPorCadastroUUID(getCadastroUUID())</expression-string>
+        <expression-string>cpfValido(&quot;4618352452&quot;)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>authentication</expression-string>
+        <expression-string>cpfValido(&quot;00000000092&quot;)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>authentication.authorities.remove(authentication.authorities.first())</expression-string>
+        <expression-string>cpfValido(&quot;00000100000&quot;)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>authentication.authorities</expression-string>
+        <expression-string>cpfValido(&quot;00000000000&quot;)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>authentication.authorities.remove(authentication.authorities)</expression-string>
+        <expression-string>cpfValido(&quot;1111111111111&quot;)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>authentication.authorities.remove(aute)</expression-string>
+        <expression-string>cpfValido(CampoNumerico(CampoObrigatorio(cpf)).get())</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>authentication.authorities.rem</expression-string>
+        <expression-string>pessoaFisicaService.cadastrar(dto)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>SecurityContextHolder.getContext()</expression-string>
+        <expression-string>request</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>SecurityContextHolder.getContext()</expression-string>
+        <expression-string>ResponseEntity.status(HttpStatus.FORBIDDEN).body(Response(erro))</expression-string>
         <language-id>kotlin</language-id>
-        <custom-info>import org.springframework.security.core.context.SecurityContextHolder</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/CadastroDomain.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoExcedeTamanhoLimiteException.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/Cadastro.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/request/PessoaFisicaRequest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/PessoaFisica.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="40" />
+        <state relative-caret-position="119">
+          <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
           <folding>
-            <element signature="e#48#138#0" expanded="true" />
+            <element signature="e#40#175#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/request/AlterarDadosPFRequest.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Cidade.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="66" lean-forward="true" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
+        <state relative-caret-position="204">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/builder/PessoaFisicaDTOBuilder.kt" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.50/kotlin-stdlib-common-1.3.50-sources.jar!/generated/_Strings.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/Telefone.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
+        <state relative-caret-position="289">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.50/kotlin-stdlib-common-1.3.50-sources.jar!/kotlin/text/Strings.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/CodigoPostal.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="293" column="11" lean-forward="true" selection-start-line="293" selection-start-column="11" selection-end-line="293" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaAlteradaDomainMapper.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/IPessoaRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/Documento.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/Pessoa.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/PessoaRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="46" column="33" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="46" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/ICadastroRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/ICadastroService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaFisicaAlteradaDomainMapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/PessoaFisicaAlteradaDomain.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="e#37#279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/CadastroEntityMapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaEntityMapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="340">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/Data.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="43" />
+        <state relative-caret-position="323">
+          <caret line="23" column="66" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/CadastroRepositoryBean.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/br/com/unip/cardapio/autenticacao-lib/1.0-SNAPSHOT/autenticacao-lib-1.0-SNAPSHOT.jar!/br/com/unip/cardapio/util/TokenUtil.class" />
-    <entry file="jar://$PROJECT_DIR$/../../../javas/jdk-11.0.2/lib/src.zip!/java.base/javax/security/auth/login/CredentialNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Estado.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="96" column="43" selection-start-line="96" selection-start-column="43" selection-end-line="96" selection-end-column="43" />
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/CadastroService.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Logradouro.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        <state relative-caret-position="204">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/IntegracaoException.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/endereco/Numero.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/RestRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/LocalizacaoRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/PessoaFisicaAlteradaDTO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/DocumentoDTO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        <state relative-caret-position="238">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pf/CPF.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="507">
+          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/PessoaFisicaDomain.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pj/CNPJ.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        <state relative-caret-position="507">
+          <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/PessoaDomainMapper.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/campos/pessoa/pj/RazaoSocial.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="44" />
+        <state relative-caret-position="204">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/PessoaJuridicaWS.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/DocumentoJaCadastradoException.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/PessoaDTO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/IPessoaFisicaRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        <state relative-caret-position="153">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
-            <element signature="e#41#150#0" expanded="true" />
+            <element signature="e#40#168#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/IPessoaFisicaService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="68" />
-          <folding>
-            <element signature="e#38#141#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/PessoaResponse.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/CadastroResponse.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/filter/Permissoes.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/br/com/unip/cardapio/autenticacao-lib/1.0-SNAPSHOT/autenticacao-lib-1.0-SNAPSHOT.jar!/br/com/unip/autenticacaolib/util/TokenUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="8" column="124" selection-start-line="8" selection-start-column="124" selection-end-line="8" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/br/com/unip/cardapio/autenticacao-lib/1.0-SNAPSHOT/autenticacao-lib-1.0-SNAPSHOT.jar!/br/com/unip/autenticacaolib/AuthenticationToken.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/br/com/unip/cardapio/autenticacao-lib/1.0-SNAPSHOT/autenticacao-lib-1.0-SNAPSHOT.jar!/br/com/unip/autenticacaolib/exception/TokenExpiradoException.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.3.50/kotlin-stdlib-1.3.50-sources.jar!/kotlin/io/Exceptions.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/TokenExpiradoException.kt" />
+    <entry file="jar://$MAVEN_REPOSITORY$/br/com/unip/cardapio/autenticacao-lib/1.0-SNAPSHOT/autenticacao-lib-1.0-SNAPSHOT.jar!/br/com/unip/autenticacaolib/exception/TokenInvalidoException.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="85">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/filter/JWTAuthenticationFilter.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/TokenInvalidoException.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="27" column="78" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="78" />
+        <state relative-caret-position="306">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/sql/CAD-001-00.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/PessoaJuridicaService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/PessoaJuridicaWS.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/EnderecoDomainMapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/EnderecoDTO.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/CoordenadasDTO.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/domain/EnderecoDomain.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/mapper/IMapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoNumericoException.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="84" selection-start-line="6" selection-start-column="4" selection-end-line="8" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/DataPassadaException.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="73" />
           <folding>
-            <element signature="e#47#908#0" expanded="true" />
+            <element signature="e#40#169#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/SecurityConfiguration.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CampoObrigatorioException.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="90" lean-forward="true" selection-start-line="18" selection-start-column="90" selection-end-line="18" selection-end-column="90" />
+        <state relative-caret-position="102">
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/EntityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/LocalizacaoRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/RestRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/erro/Erro.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/ParametroInvalidoException.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#40#163#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/HandlerException.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <element signature="e#40#547#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/CadastroWS.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/SecurityConfiguration.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="55" />
+        <state relative-caret-position="119">
+          <caret line="15" column="96" selection-start-line="15" selection-start-column="96" selection-end-line="15" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/filter/AuthenticationFilter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CadastroBaseException.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/erro/EMicroservice.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/util/PersistenciaUtil.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="90" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/ICadastroService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/UsuarioNaoPossuiCadastroException.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/ECodigoErro.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/exception/CadastroNaoEncontradoException.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="85" selection-start-line="6" selection-start-column="85" selection-end-line="6" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/IPessoaFisicaService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/PessoaFisicaWS.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="39" column="52" lean-forward="true" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+        <state relative-caret-position="663">
+          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+          <folding>
+            <element signature="e#41#1282#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/PessoaFisicaService.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+        <state relative-caret-position="442">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/security/Permissoes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/CadastroRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/CadastroService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/CadastroWS.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
           <folding>
-            <element signature="e#38#607#0" expanded="true" />
+            <element signature="e#41#1072#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/PessoaFisicaDTO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/PessoaFisicaRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="56" column="94" selection-start-line="56" selection-start-column="94" selection-end-line="56" selection-end-column="94" />
         </state>
       </provider>
     </entry>

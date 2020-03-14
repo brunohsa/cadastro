@@ -17,7 +17,6 @@ class PessoaDomainMapper : IMapper<IPessoaDTO, IPessoaDomain> {
                     objeto.nome,
                     objeto.sobrenome,
                     objeto.telefone,
-                    objeto.dataNascimento,
                     objeto.documento?.numero
             )
         }

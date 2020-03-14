@@ -18,15 +18,15 @@ class CodigoPostal : ICampo<String> {
         try {
             this.valor = validar(CampoNumerico(CampoObrigatorio(valor)).get())
         } catch (e: CampoObrigatorioException) {
-            throw CampoObrigatorioException("CAMPO_CEP_OBRIGATORIO", CAMPO_CEP_OBRIGATORIO)
+            throw CampoObrigatorioException(CAMPO_CEP_OBRIGATORIO)
         } catch (e: CampoObrigatorioException) {
-            throw CampoObrigatorioException("CAMPO_CEP_DEVE_SER_NUMERICO", CAMPO_CEP_DEVE_SER_NUMERICO)
+            throw CampoObrigatorioException(CAMPO_CEP_DEVE_SER_NUMERICO)
         }
     }
 
     private fun validar(cep: String): String {
         if (cep.length != 8) {
-            throw ParametroInvalidoException("CAMPO_CEP_INVALIDO", CAMPO_CEP_INVALIDO)
+            throw ParametroInvalidoException(CAMPO_CEP_INVALIDO)
         }
         return cep
     }

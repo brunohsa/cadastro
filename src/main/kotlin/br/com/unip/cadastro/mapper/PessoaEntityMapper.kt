@@ -27,18 +27,11 @@ class PessoaEntityMapper : IMapper<IPessoaDomain, Pessoa> {
         if (!domain.cpf.get().isNullOrEmpty()) {
             documento = Documento(domain.cpf.get()!!, CPF)
         }
-        return PessoaFisica(nome = domain.nome.get(),
-                sobrenome = domain.sobrenome.get(),
-                telefone = domain.telefone.get(),
-                dataNascimento = domain.dataNascimento.get(),
-                documento = documento
-        )
+        return PessoaFisica(domain.nome.get(), domain.sobrenome.get(), domain.telefone.get(), documento)
     }
 
     private fun pessoaJuridicaParser(domain: PessoaJuridicaDomain): PessoaJuridica {
-        return PessoaJuridica(nome = domain.razaoSocial.get(),
-                nomeFantasia = domain.nomeFantasia.get(),
-                telefone = domain.telefone.get(),
-                documento = Documento(domain.cnpj.get(), CNPJ))
+        val documento = Documento(domain.cnpj.get(), CNPJ)
+        return PessoaJuridica(domain.razaoSocial.get(), domain.nomeFantasia.get(), domain.telefone.get(), documento)
     }
 }

@@ -1,6 +1,6 @@
 package br.com.unip.cadastro.domain.campos
 
-import br.com.unip.cadastro.exception.ECodigoErro
+import br.com.unip.cadastro.exception.ECodigoErro.FORMATO_DATA_INVALIDA
 import br.com.unip.cadastro.exception.ParametroInvalidoException
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -21,7 +21,7 @@ class Data : ICampo<LocalDate?> {
                 this.data = LocalDate.parse(data, format)
             }
         } catch (ex: DateTimeParseException) {
-            throw ParametroInvalidoException("Formato da data inválido.", ECodigoErro.FORMATO_DATA_INVALIDA)
+            throw ParametroInvalidoException(FORMATO_DATA_INVALIDA)
         }
     }
 

@@ -8,4 +8,6 @@ interface IPessoaFisicaRepository {
     fun alterar(cadastroUUID: String, domain: PessoaFisicaAlteradaDomain)
 
     fun buscarPorCadastroUUID(cadastroUUID: String): PessoaFisicaDTO
+
+    fun pessoaComDocumentoDuplicado(numero: String) : Boolean
 }

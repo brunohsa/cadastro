@@ -5,18 +5,16 @@ class PessoaFisicaDTO : IPessoaDTO {
     var nome: String? = ""
     val sobrenome: String?
     val telefone: String?
-    var dataNascimento: String? = "" //TODO REMOVER
     var documento: DocumentoDTO? = null
 
-    constructor(nome: String?, sobrenome: String?, telefone: String?, dataNascimento: String?, documento: DocumentoDTO?)
-            : this(sobrenome, telefone, dataNascimento, documento) {
+    constructor(nome: String?, sobrenome: String?, telefone: String?, documento: DocumentoDTO?)
+            : this(sobrenome, telefone, documento) {
         this.nome = nome
     }
 
-    constructor(sobrenome: String?, telefone: String?, dataNascimento: String?, documento: DocumentoDTO?) {
+    constructor(sobrenome: String?, telefone: String?, documento: DocumentoDTO?) {
         this.sobrenome = sobrenome
         this.telefone = telefone
-        this.dataNascimento = dataNascimento
         this.documento = documento
     }
 
