@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/CadastroRepository.kt" line="23" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60785265-7743-4b00-8f7b-94500422d85a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="60785265-7743-4b00-8f7b-94500422d85a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="519">
-              <caret line="130" column="25" lean-forward="true" selection-start-line="110" selection-start-column="11" selection-end-line="130" selection-end-column="25" />
+              <caret line="130" column="25" selection-start-line="110" selection-start-column="11" selection-end-line="130" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -241,7 +238,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584381738415" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584381895770" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain" />
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/br/com/unip/cardapio/autenticacao-lib/1.0-SNAPSHOT/autenticacao-lib-1.0-SNAPSHOT.jar!/" />
     <property name="settings.editor.selected.configurable" value="copyright" />
@@ -861,7 +858,7 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
-          <caret line="130" column="25" lean-forward="true" selection-start-line="110" selection-start-column="11" selection-end-line="130" selection-end-column="25" />
+          <caret line="130" column="25" selection-start-line="110" selection-start-column="11" selection-end-line="130" selection-end-column="25" />
         </state>
       </provider>
     </entry>
