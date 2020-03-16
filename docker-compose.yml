@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+
+  microservice:
+    build:
+      "./"
+    container_name: cadastro-ms
+    networks:
+      - autenticacao
+    ports:
+      - "8082:8082"
+
+networks:
+  autenticacao:
+    external: true

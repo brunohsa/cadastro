@@ -7,6 +7,7 @@
     <groupId>br.com.unip.cardapio</groupId>
     <artifactId>cadastro</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -23,10 +24,6 @@
         <jaxb.version>2.3.0</jaxb.version>
         <liquibase.version>3.5.3</liquibase.version>
         <change.log.file>db.master.xml</change.log.file>
-
-        <liquibase.datasource.url>jdbc:mysql://localhost:3306/Autenticacao</liquibase.datasource.url>
-        <liquibase.datasource.username>root</liquibase.datasource.username>
-        <liquibase.datasource.password>1234</liquibase.datasource.password>
     </properties>
 
     <dependencies>
@@ -107,6 +104,32 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.4.13</version>
+                <executions>
+                    <execution>
+                        <id>default</id>
+                        <goals>
+                            <goal>build</goal>
+                            <goal>push</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <repository>cadastro</repository>
+                    <tag>${project.version}</tag>
+                    <buildArgs>
+                        <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
+                    </buildArgs>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
                 <groupId>org.jetbrains.kotlin</groupId>
@@ -200,9 +223,9 @@
                 <configuration>
                     <changeLogFile>src/main/resources/db/${change.log.file}</changeLogFile>
                     <driver>com.mysql.jdbc.Driver</driver>
-                    <url>${liquibase.datasource.url}</url>
-                    <username>${liquibase.datasource.username}</username>
-                    <password>${liquibase.datasource.password}</password>
+                    <url>${liquibase.url}</url>
+                    <username>${liquibase.username}</username>
+                    <password>${liquibase.password}</password>
                     <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
                 </configuration>
                 <dependencies>
@@ -237,4 +260,29 @@
             </resource>
         </resources>
     </build>
+
+    <profiles>
+        <profile>
+            <id>local</id>
+            <properties>
+                <activatedProperties>local</activatedProperties>
+                <liquibase.url>jdbc:mysql://localhost:3306/Autenticacao</liquibase.url>
+                <liquibase.username>root</liquibase.username>
+                <liquibase.password>1234</liquibase.password>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>docker</id>
+            <properties>
+                <activatedProperties>docker</activatedProperties>
+                <activatedProperties>local</activatedProperties>
+                <liquibase.url>jdbc:mysql://mysql:3306/Autenticacao</liquibase.url>
+                <liquibase.username>root</liquibase.username>
+                <liquibase.password>1234</liquibase.password>
+            </properties>
+        </profile>
+    </profiles>
 </project>

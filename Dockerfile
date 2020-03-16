@@ -1,0 +1,7 @@
+# Dockerfile
+FROM openjdk:11-jre
+
+RUN mkdir app
+
+ADD /target/cadastro-1.0-SNAPSHOT.jar app/cadastro.jar
+ENTRYPOINT ["java","-jar","-Dspring.profiles.active=docker","app/cadastro.jar"]
