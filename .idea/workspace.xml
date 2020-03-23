@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60785265-7743-4b00-8f7b-94500422d85a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/campos/Data.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain/campos/Data.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/domain/campos/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/unip/cardapio/domain/campos/Data.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadastro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cadastro.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,32 +21,6 @@
         <option value="Kotlin Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>@Valu</find>
-      <find>\${</find>
-      <find>Perfil</find>
-      <find>::class.qualifiedName</find>
-      <find>stra</find>
-      <find>tempo.expiracao</find>
-      <find>@Value(</find>
-      <find>LoginWS</find>
-      <find>/autenticar</find>
-      <find>request</find>
-      <find>firebase.oauth.auth.url</find>
-      <find>UsuarioDTO</find>
-      <find>Autenticacao</find>
-      <find>spring-</find>
-      <find>secu</find>
-      <find>sec</find>
-      <find>&lt;T</find>
-      <find>pessoa-fisica</find>
-      <find>@Enu</find>
-      <find>@PathParam(</find>
-      <find>@OnetoO</find>
-      <find>@</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
