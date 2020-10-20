@@ -1,6 +1,5 @@
 package br.com.unip.cadastro.webservice
 
-import br.com.unip.autenticacaolib.util.AuthenticationUtil
 import br.com.unip.cadastro.dto.EnderecoDTO
 import br.com.unip.cadastro.security.Permissoes.ADICIONAR_ENDERECO
 import br.com.unip.cadastro.security.Permissoes.BUSCAR_CADASTRO

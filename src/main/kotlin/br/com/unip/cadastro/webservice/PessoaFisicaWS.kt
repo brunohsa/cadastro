@@ -15,6 +15,7 @@ import br.com.unip.cadastro.webservice.model.response.PessoaResponse
 import org.springframework.http.ResponseEntity
 import org.springframework.security.access.prepost.PreAuthorize
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.PutMapping
 import org.springframework.web.bind.annotation.RequestBody
@@ -35,10 +36,10 @@ class PessoaFisicaWS(val pessoaFisicaService: IPessoaFisicaService) {
         return ResponseEntity.ok(uuid)
     }
 
-    @GetMapping(value = [""])
-    @PreAuthorize("hasAuthority('${BUSCAR_PESSOA_FISICA}')")
-    fun buscar(): ResponseEntity<PessoaResponse> {
-        val pessoa = pessoaFisicaService.buscar()
+    @GetMapping(value = ["/cadastro/{cadastroUUID}/buscar"])
+    //@PreAuthorize("hasAuthority('${BUSCAR_PESSOA_FISICA}')")
+    fun buscar(@PathVariable("cadastroUUID") cadastroUUID: String): ResponseEntity<PessoaResponse> {
+        val pessoa = pessoaFisicaService.buscar(cadastroUUID)
         return ResponseEntity.ok(map(pessoa))
     }
 

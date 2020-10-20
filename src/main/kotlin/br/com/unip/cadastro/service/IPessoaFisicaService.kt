@@ -9,5 +9,5 @@ interface IPessoaFisicaService {
 
     fun alterar(dto: PessoaFisicaAlteradaDTO)
 
-    fun buscar(): PessoaFisicaDTO
+    fun buscar(cadastroUUID: String): PessoaFisicaDTO
 }
