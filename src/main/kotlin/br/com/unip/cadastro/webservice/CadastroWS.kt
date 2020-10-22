@@ -8,6 +8,8 @@ import br.com.unip.cadastro.service.ICadastroService
 import br.com.unip.cadastro.webservice.model.request.EnderecoRequest
 import br.com.unip.cadastro.webservice.model.response.CadastroResponse
 import br.com.unip.cadastro.webservice.model.response.EnderecoResponse
+import io.swagger.annotations.ApiImplicitParam
+import io.swagger.annotations.ApiImplicitParams
 import org.springframework.http.ResponseEntity
 import org.springframework.security.access.prepost.PreAuthorize
 import org.springframework.web.bind.annotation.GetMapping
@@ -21,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping(value = ["/v1/cadastros"])
 class CadastroWS(val cadastroService: ICadastroService) {
 
+    @ApiImplicitParams(ApiImplicitParam(name = "token", value = "Token", required = true, paramType = "header"))
     @GetMapping(value = ["/{uuid}"])
     @PreAuthorize("hasAuthority('${BUSCAR_CADASTRO}')")
         fun buscar(@PathVariable("uuid") uuid: String): ResponseEntity<CadastroResponse> {
@@ -29,6 +32,7 @@ class CadastroWS(val cadastroService: ICadastroService) {
         return ResponseEntity.ok(response)
     }
 
+    @ApiImplicitParams(ApiImplicitParam(name = "token", value = "Token", required = true, paramType = "header"))
     @GetMapping(value = ["/endereco"])
     @PreAuthorize("hasAuthority('${BUSCAS_ENDERECO}')")
     fun buscarEndereco(): ResponseEntity<Any> {
@@ -40,6 +44,7 @@ class CadastroWS(val cadastroService: ICadastroService) {
         }
     }
 
+    @ApiImplicitParams(ApiImplicitParam(name = "token", value = "Token", required = true, paramType = "header"))
     @PutMapping(value = ["/endereco/adicionar"])
     @PreAuthorize("hasAuthority('${ADICIONAR_ENDERECO}')")
     fun adicionarEndereco(@RequestBody endereco: EnderecoRequest) {

@@ -5,6 +5,8 @@ import br.com.unip.cadastro.security.Permissoes.ALTERAR_PESSOA_JURIDICA
 import br.com.unip.cadastro.security.Permissoes.CADASTRAR_PESSOA_JURIDICA
 import br.com.unip.cadastro.service.IPessoaJuridicaService
 import br.com.unip.cadastro.webservice.model.request.PessoaJuridicaRequest
+import io.swagger.annotations.ApiImplicitParam
+import io.swagger.annotations.ApiImplicitParams
 import org.springframework.http.ResponseEntity
 import org.springframework.security.access.prepost.PreAuthorize
 import org.springframework.web.bind.annotation.PathVariable
@@ -18,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping(value = ["/v1/pessoa-juridica"])
 class PessoaJuridicaWS(val cadastroPJService: IPessoaJuridicaService) {
 
+    @ApiImplicitParams(ApiImplicitParam(name = "token", value = "Token", required = true, paramType = "header"))
     @PostMapping(value = ["/cadastrar"])
     @PreAuthorize("hasAuthority('${CADASTRAR_PESSOA_JURIDICA}')")
     fun cadastrar(@RequestBody request: PessoaJuridicaRequest): ResponseEntity<String> {
@@ -26,6 +29,7 @@ class PessoaJuridicaWS(val cadastroPJService: IPessoaJuridicaService) {
         return ResponseEntity.ok(uuid)
     }
 
+    @ApiImplicitParams(ApiImplicitParam(name = "token", value = "Token", required = true, paramType = "header"))
     @PutMapping(value = ["/{cadastro_uuid}/alterar"])
     @PreAuthorize("hasAuthority('${ALTERAR_PESSOA_JURIDICA}')")
     fun alterar(@PathVariable("cadastro_uuid") cadastroUuid: String,

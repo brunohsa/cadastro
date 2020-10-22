@@ -12,6 +12,8 @@ import br.com.unip.cadastro.webservice.model.request.AlterarDadosPFRequest
 import br.com.unip.cadastro.webservice.model.request.PessoaFisicaRequest
 import br.com.unip.cadastro.webservice.model.response.DocumentoResponse
 import br.com.unip.cadastro.webservice.model.response.PessoaResponse
+import io.swagger.annotations.ApiImplicitParam
+import io.swagger.annotations.ApiImplicitParams
 import org.springframework.http.ResponseEntity
 import org.springframework.security.access.prepost.PreAuthorize
 import org.springframework.web.bind.annotation.GetMapping
@@ -26,6 +28,7 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping(value = ["/v1/pessoa-fisica"])
 class PessoaFisicaWS(val pessoaFisicaService: IPessoaFisicaService) {
 
+    @ApiImplicitParams(ApiImplicitParam(name = "token", value = "Token", required = true, paramType = "header"))
     @PostMapping(value = ["/cadastrar"])
     @PreAuthorize("hasAuthority('${CADASTRAR_PESSOA_FISICA}')")
     fun cadastrar(@RequestBody request: PessoaFisicaRequest): ResponseEntity<String> {
@@ -36,6 +39,7 @@ class PessoaFisicaWS(val pessoaFisicaService: IPessoaFisicaService) {
         return ResponseEntity.ok(uuid)
     }
 
+    @ApiImplicitParams(ApiImplicitParam(name = "token", value = "Token", required = true, paramType = "header"))
     @GetMapping(value = ["/cadastro/{cadastroUUID}/buscar"])
     //@PreAuthorize("hasAuthority('${BUSCAR_PESSOA_FISICA}')")
     fun buscar(@PathVariable("cadastroUUID") cadastroUUID: String): ResponseEntity<PessoaResponse> {
@@ -43,6 +47,7 @@ class PessoaFisicaWS(val pessoaFisicaService: IPessoaFisicaService) {
         return ResponseEntity.ok(map(pessoa))
     }
 
+    @ApiImplicitParams(ApiImplicitParam(name = "token", value = "Token", required = true, paramType = "header"))
     @PutMapping(value = ["/alterar"])
     @PreAuthorize("hasAuthority('${ALTERAR_PESSOA_FISICA}')")
     fun alterar(@RequestBody request: AlterarDadosPFRequest): ResponseEntity<Void> {
