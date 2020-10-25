@@ -2,15 +2,10 @@ package br.com.unip.cadastro.repository
 
 import br.com.unip.cadastro.domain.CadastroDomain
 import br.com.unip.cadastro.domain.EnderecoDomain
-import br.com.unip.cadastro.dto.CadastroDTO
-import br.com.unip.cadastro.dto.DocumentoDTO
-import br.com.unip.cadastro.dto.EnderecoDTO
-import br.com.unip.cadastro.dto.PessoaDTO
+import br.com.unip.cadastro.dto.*
 import br.com.unip.cadastro.mapper.CadastroEntityMapper
 import br.com.unip.cadastro.mapper.PessoaEntityMapper
-import br.com.unip.cadastro.repository.entity.Cadastro
-import br.com.unip.cadastro.repository.entity.Documento
-import br.com.unip.cadastro.repository.entity.Endereco
+import br.com.unip.cadastro.repository.entity.*
 import br.com.unip.cadastro.repository.entity.enums.EStatusCadastro
 import org.springframework.stereotype.Repository
 import javax.persistence.EntityManager
@@ -54,7 +49,7 @@ class CadastroRepository(val cadastroEntityMapper: CadastroEntityMapper,
         return query.singleResult as Long > 0
     }
 
-    private fun buscarPorUUID(uuid: String): Cadastro {
+    override fun buscarPorUUID(uuid: String): Cadastro {
         val sql = """SELECT c FROM ${Cadastro::class.qualifiedName} c
                      WHERE c.uuid = :uuid """
 
@@ -80,30 +75,6 @@ class CadastroRepository(val cadastroEntityMapper: CadastroEntityMapper,
         }
     }
 
-    override fun buscar(uuid: String): CadastroDTO? {
-        val cadastro = buscarPorUUID(uuid)
-
-        val pessoa = cadastro.getPessoa()
-
-        val documento = map(pessoa.getDocumento())
-        return CadastroDTO(cadastro.uuid, cadastro.status.name, PessoaDTO(pessoa.nome!!, documento))
-    }
-
-    private fun map(endereco: Endereco?): EnderecoDTO? {
-        if (endereco == null) {
-            return null
-        }
-        return EnderecoDTO(endereco.codigoPostal, endereco.bairro, endereco.cidade, endereco.estado,
-                endereco.logradouro, endereco.numero)
-    }
-
-    private fun map(documento: Documento?): DocumentoDTO? {
-        if (documento == null) {
-            return null
-        }
-        return DocumentoDTO(documento.tipoDocumento, documento.numero)
-    }
-
     @Transactional
     override fun adicionarEndereco(domain: EnderecoDomain, uuid: String) {
         val endereco = Endereco(
@@ -121,5 +92,39 @@ class CadastroRepository(val cadastroEntityMapper: CadastroEntityMapper,
         pessoa.adicionarEndereco(endereco)
 
         em.persist(cadastro)
+    }
+
+    override fun buscar(uuid: String): CadastroDTO? {
+        val cadastro = buscarPorUUID(uuid)
+        val pessoa = mapPessoa(cadastro.getPessoa())
+        return CadastroDTO(cadastro.uuid, cadastro.status.name, pessoa)
+    }
+
+    private fun mapPessoa(pessoa: Pessoa): IPessoaDTO {
+        if (pessoa is PessoaFisica) {
+            return pessoa.toDTO()
+        }
+        return (pessoa as PessoaJuridica).toDTO()
+    }
+
+    private fun PessoaFisica.toDTO() =
+            PessoaFisicaDTO(this.nome, this.sobrenome, this.telefone, map(this.getDocumento()))
+
+    private fun PessoaJuridica.toDTO() =
+            PessoaJuridicaDTO(this.nome, this.nomeFantasia, this.telefone, this.getDocumento()?.numero, map(this.getEndereco()))
+
+    private fun map(endereco: Endereco?): EnderecoDTO? {
+        if (endereco == null) {
+            return null
+        }
+        return EnderecoDTO(endereco.codigoPostal, endereco.bairro, endereco.cidade, endereco.estado,
+                endereco.logradouro, endereco.numero)
+    }
+
+    private fun map(documento: Documento?): DocumentoDTO? {
+        if (documento == null) {
+            return null
+        }
+        return DocumentoDTO(documento.tipoDocumento, documento.numero)
     }
 }

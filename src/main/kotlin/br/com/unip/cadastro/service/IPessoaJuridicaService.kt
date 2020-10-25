@@ -7,5 +7,5 @@ interface IPessoaJuridicaService {
 
     fun cadastrar(dto: PessoaJuridicaDTO): String
 
-    fun buscar(uuid: String?): CadastroDTO
+    fun buscarCadastro(uuid: String): CadastroDTO
 }
