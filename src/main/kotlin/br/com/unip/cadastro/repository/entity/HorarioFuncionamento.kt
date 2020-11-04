@@ -11,10 +11,10 @@ open class HorarioFuncionamento {
     var id: Long? = null
 
     @Column
-    var abertura: String = "00:00"
+    var abertura: String? = null
 
     @Column
-    var fechamento: String = "00:00"
+    var fechamento: String? = null
 
     @Column
     @Enumerated(EnumType.STRING)
@@ -28,7 +28,7 @@ open class HorarioFuncionamento {
 
     constructor()
 
-    constructor(abertura: String, fechamento: String, diaSemana: EDiaSemana, cadastro: Cadastro, fechado: Boolean?)
+    constructor(abertura: String?, fechamento: String?, diaSemana: EDiaSemana, cadastro: Cadastro, fechado: Boolean?)
             : this(diaSemana, cadastro) {
         this.abertura = abertura
         this.fechamento = fechamento

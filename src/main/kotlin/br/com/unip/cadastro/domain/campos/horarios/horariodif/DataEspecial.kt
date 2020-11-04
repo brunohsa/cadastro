@@ -1,4 +1,4 @@
-package br.com.unip.cadastro.domain.campos.horariodif
+package br.com.unip.cadastro.domain.campos.horarios.horariodif
 
 import br.com.unip.cadastro.domain.campos.CampoObrigatorio
 import br.com.unip.cadastro.domain.campos.DataFutura

@@ -4,7 +4,7 @@ import java.time.LocalDate
 import java.time.LocalDateTime
 
 class HorarioDiferenciadoDTO(var id: Long?,
-                             val dataCadastro: LocalDateTime?,
+                             val dataCadastro: LocalDate?,
                              val dataEspecial: LocalDate?,
                              val abertura: String?,
                              val fechamento: String?)

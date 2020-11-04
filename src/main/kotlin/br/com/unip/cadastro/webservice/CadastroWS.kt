@@ -34,6 +34,14 @@ class CadastroWS(val cadastroService: ICadastroService) {
     }
 
     @ApiImplicitParams(ApiImplicitParam(name = "token", value = "Token", required = true, paramType = "header"))
+    @GetMapping("/{cadastro_uuid}")
+    @PreAuthorize("hasAuthority('${BUSCAR_CADASTRO}')")
+    fun buscarPorCadastroUUID(@PathVariable(value = "cadastro_uuid") uuid: String): ResponseEntity<CadastroResponse> {
+        val cadastroDTO = cadastroService.buscar(uuid)
+        return ResponseEntity.ok(cadastroDTO.toResponse())
+    }
+
+    @ApiImplicitParams(ApiImplicitParam(name = "token", value = "Token", required = true, paramType = "header"))
     @GetMapping(value = ["/endereco"])
     @PreAuthorize("hasAuthority('${BUSCAS_ENDERECO}')")
     fun buscarEndereco(): ResponseEntity<Any> {

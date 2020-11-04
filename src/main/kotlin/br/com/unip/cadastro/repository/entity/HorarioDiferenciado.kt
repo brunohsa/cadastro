@@ -12,21 +12,21 @@ open class HorarioDiferenciado {
     var id: Long? = null
 
     @Column
-    var dataCadastro: LocalDateTime = LocalDateTime.now()
+    var dataCadastro: LocalDate = LocalDate.now()
 
     @Column
     var dataEspecial: LocalDate
 
     @Column
-    var abertura: String = "00:00"
+    var abertura: String?
 
     @Column
-    var fechamento: String = "00:00"
+    var fechamento: String?
 
     @ManyToOne
     var cadastro: Cadastro
 
-    constructor(dataEspecial: LocalDate, abertura: String, fechamento: String, cadastro: Cadastro) {
+    constructor(dataEspecial: LocalDate, abertura: String?, fechamento: String?, cadastro: Cadastro) {
         this.dataEspecial = dataEspecial
         this.abertura = abertura
         this.fechamento = fechamento

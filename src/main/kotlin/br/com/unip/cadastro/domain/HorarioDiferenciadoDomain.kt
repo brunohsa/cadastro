@@ -1,8 +1,8 @@
 package br.com.unip.cadastro.domain
 
-import br.com.unip.cadastro.domain.campos.horariodif.Abertura
-import br.com.unip.cadastro.domain.campos.horariodif.DataEspecial
-import br.com.unip.cadastro.domain.campos.horariodif.Fechamento
+import br.com.unip.cadastro.domain.campos.horarios.Abertura
+import br.com.unip.cadastro.domain.campos.horarios.horariodif.DataEspecial
+import br.com.unip.cadastro.domain.campos.horarios.Fechamento
 
 class HorarioDiferenciadoDomain {
 

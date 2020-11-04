@@ -7,6 +7,6 @@ import com.fasterxml.jackson.annotation.JsonProperty
 @JsonIgnoreProperties(ignoreUnknown = true)
 class HorarioFuncionamentoResponse(@JsonProperty(value = "id") val id: Long,
                                    @JsonProperty(value = "dia") val dia: EDiaSemana,
-                                   @JsonProperty(value = "abertura") val abertura: String,
-                                   @JsonProperty(value = "fechamento") val fechamento: String,
+                                   @JsonProperty(value = "abertura") val abertura: String?,
+                                   @JsonProperty(value = "fechamento") val fechamento: String?,
                                    @JsonProperty(value = "fechado") val fechado: Boolean)
