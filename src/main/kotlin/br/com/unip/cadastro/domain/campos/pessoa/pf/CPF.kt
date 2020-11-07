@@ -11,6 +11,8 @@ import br.com.unip.cadastro.exception.ParametroInvalidoException
 
 class CPF : ICampo<String?> {
 
+    private val REGEX_NUMEROS: Regex = "[^0-9]".toRegex()
+
     private val cpf: String?
 
     constructor(cpf: String?) {
@@ -18,7 +20,8 @@ class CPF : ICampo<String?> {
             if (cpf.isNullOrEmpty()) {
                 this.cpf = null
             } else {
-                this.cpf = cpfValido(CampoNumerico(CampoObrigatorio(cpf)).get())
+                val cpfSemFormato = cpf.replace(REGEX_NUMEROS, "")
+                this.cpf = cpfValido(CampoNumerico(CampoObrigatorio(cpfSemFormato)).get())
             }
         } catch (e: CampoNumericoException) {
             throw CampoNumericoException(CPF_INVALIDO)
