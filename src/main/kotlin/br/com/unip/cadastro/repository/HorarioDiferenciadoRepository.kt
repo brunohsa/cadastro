@@ -48,7 +48,12 @@ class HorarioDiferenciadoRepository(val cadastroRepository: ICadastroRepository,
     @Transactional
     override fun adicionar(cadastroUUID: String, domain: HorarioDiferenciadoDomain) {
         val cadastro = cadastroRepository.buscarPorUUID(cadastroUUID)
-        val entity = HorarioDiferenciado(domain.dataEspecial.get(), domain.abertura.get(), domain.fechamento.get(), cadastro)
+        val entity = HorarioDiferenciado(
+                domain.dataEspecial.get(),
+                domain.funcionamento.abertura.get(),
+                domain.funcionamento.fechamento.get(),
+                cadastro
+        )
         em.merge(entity)
     }
 

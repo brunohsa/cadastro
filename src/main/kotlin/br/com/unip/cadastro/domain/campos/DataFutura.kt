@@ -1,5 +1,6 @@
 package br.com.unip.cadastro.domain.campos
 
+import br.com.unip.cadastro.exception.DataFuturaException
 import br.com.unip.cadastro.exception.DataPassadaException
 import java.time.LocalDate
 
@@ -19,8 +20,9 @@ class DataFutura : ICampo<LocalDate?> {
         if (dataPassada == null) {
             return null
         }
-        if (dataPassada.isBefore(LocalDate.now())) {
-            throw DataPassadaException()
+        val hoje = LocalDate.now()
+        if (dataPassada.isBefore(hoje) || dataPassada == hoje) {
+            throw DataFuturaException()
         }
         return dataPassada
     }

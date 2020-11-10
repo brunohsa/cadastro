@@ -26,8 +26,8 @@ class HorarioFuncionamentoRepository(val cadastroRepository: ICadastroRepository
     override fun alterar(cadastroUUID: String, domain: HorarioFuncionamentoDomain) {
         val horario = this.buscarPorCadastroUUIDEDiaDaSemana(cadastroUUID, domain.diaSemana.get())
                 ?: throw CadastroNaoEncontradoException()
-        horario.abertura = domain.abertura.get()
-        horario.fechamento = domain.fechamento.get()
+        horario.abertura = domain.funcionamento.abertura.get()
+        horario.fechamento = domain.funcionamento.fechamento.get()
         if (domain.fechado.get() != null) {
             horario.fechado = domain.fechado.get()
         }
