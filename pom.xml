@@ -269,7 +269,7 @@
             <id>docker</id>
             <properties>
                 <activatedProperties>docker</activatedProperties>
-                <liquibase.url>jdbc:mysql://mysql:3306/appetito</liquibase.url>
+                <liquibase.url>jdbc:mysql://appetito.brazilsouth.cloudapp.azure.com:3306/appetito</liquibase.url>
                 <liquibase.username>root</liquibase.username>
                 <liquibase.password>291119</liquibase.password>
             </properties>

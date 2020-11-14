@@ -19,6 +19,11 @@ class CadastroRepository(val cadastroEntityMapper: CadastroEntityMapper,
                          val em: EntityManager) : ICadastroRepository {
 
     @Transactional
+    override fun salvar(cadastro: Cadastro) {
+        em.merge(cadastro)
+    }
+
+    @Transactional
     override fun cadastrar(domain: CadastroDomain): String {
         val cadastro = cadastroEntityMapper.map(domain)
         val pessoa = pessoaEntityMapper.map(domain.pessoa)

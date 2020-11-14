@@ -4,6 +4,8 @@ import br.com.unip.cadastro.domain.FiltroHorarioDiferenciadoDomain
 import br.com.unip.cadastro.domain.HorarioDiferenciadoDomain
 import br.com.unip.cadastro.domain.HorarioFuncionamentoDomain
 import br.com.unip.cadastro.dto.*
+import br.com.unip.cadastro.exception.ECodigoErro
+import br.com.unip.cadastro.exception.ParametroInvalidoException
 import br.com.unip.cadastro.repository.IHorarioDiferenciadoRepository
 import br.com.unip.cadastro.repository.IHorarioFuncionamentoRepository
 import org.springframework.stereotype.Service
@@ -23,6 +25,11 @@ class HorariosFuncionamentoService(val horarioFuncionamentoRepository: IHorarioF
 
     override fun adicionarHorarioDiferenciado(cadastroUUID: String, dto: AdicionarHorarioDiferenciadoDTO) {
         val domain = HorarioDiferenciadoDomain(dto.dataEspecial, dto.abertura, dto.fechamento)
+        val horarioPersistido =
+                horarioDiferenciadoRepository.buscarHorarioDiferenciadoPorDia(cadastroUUID, domain.dataEspecial.get())
+        if (horarioPersistido != null) {
+            throw ParametroInvalidoException(ECodigoErro.DATA_ESPECIAL_JA_CADASTADA)
+        }
         horarioDiferenciadoRepository.adicionar(cadastroUUID, domain)
     }
 

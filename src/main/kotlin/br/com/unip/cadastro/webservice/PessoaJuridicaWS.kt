@@ -6,6 +6,7 @@ import br.com.unip.cadastro.security.Permissoes.ALTERAR_PESSOA_JURIDICA
 import br.com.unip.cadastro.security.Permissoes.CADASTRAR_PESSOA_JURIDICA
 import br.com.unip.cadastro.service.IHorariosFuncionamentoService
 import br.com.unip.cadastro.service.IPessoaJuridicaService
+import br.com.unip.cadastro.webservice.model.request.AlterarImagemProdutoRequest
 import br.com.unip.cadastro.webservice.model.request.HorarioDiferenciadoRequest
 import br.com.unip.cadastro.webservice.model.request.PessoaJuridicaRequest
 import br.com.unip.cadastro.webservice.model.response.HorarioDiferenciadoResponse
@@ -14,6 +15,8 @@ import br.com.unip.cadastro.webservice.model.response.HorarioFuncionamentoRespon
 import io.swagger.annotations.ApiImplicitParam
 import io.swagger.annotations.ApiImplicitParams
 import io.swagger.annotations.ApiParam
+import org.springframework.core.io.InputStreamResource
+import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
 import org.springframework.security.access.prepost.PreAuthorize
 import org.springframework.web.bind.annotation.*
@@ -87,6 +90,20 @@ class PessoaJuridicaWS(val cadastroPJService: IPessoaJuridicaService,
     fun removerHorarioDiferenciado(@PathVariable(value = "id_horario") idHorario: Long): ResponseEntity<Void> {
         horarioFuncionamentoService.removerHorarioDiferenciado(idHorario)
         return ResponseEntity.ok().build()
+    }
+
+    @ApiImplicitParams(ApiImplicitParam(name = "token", value = "Token", required = true, paramType = "header"))
+    @PutMapping(value = ["/alterar-imagem"])
+    @PreAuthorize("hasAuthority('$ALTERAR_PESSOA_JURIDICA')")
+    fun alterarImagem(@RequestBody request: AlterarImagemProdutoRequest): ResponseEntity<Void> {
+        cadastroPJService.alterarImagem(getCadastroUUID(), request.imagem!!)
+        return ResponseEntity.ok().build()
+    }
+
+    @GetMapping(value = ["/{cadastro_uuid}/imagem/download"])
+    fun downloadImagem(@PathVariable(value = "cadastro_uuid") cadastroUUID: String): ResponseEntity<InputStreamResource> {
+        var imagem = cadastroPJService.downloadImagem(cadastroUUID)
+        return ResponseEntity.ok().contentType(MediaType.IMAGE_JPEG).body(imagem)
     }
 
     private fun getCadastroUUID(): String {

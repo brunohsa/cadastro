@@ -32,6 +32,8 @@ class Cadastro {
     @Column
     val uuid: String = UUID.randomUUID().toString()
 
+    var urlImagem: String? = ""
+
     constructor(status: EStatusCadastro) {
         this.status = status
     }

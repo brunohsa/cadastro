@@ -6,7 +6,9 @@ import br.com.unip.cadastro.dto.HorarioDiferenciadoDTO
 import br.com.unip.cadastro.exception.HorarioDiferenciadoNaoEncontradoException
 import br.com.unip.cadastro.repository.entity.HorarioDiferenciado
 import org.springframework.stereotype.Repository
+import java.time.LocalDate
 import javax.persistence.EntityManager
+import javax.persistence.NoResultException
 import javax.transaction.Transactional
 
 
@@ -55,6 +57,23 @@ class HorarioDiferenciadoRepository(val cadastroRepository: ICadastroRepository,
                 cadastro
         )
         em.merge(entity)
+    }
+
+     override fun buscarHorarioDiferenciadoPorDia(cadastroUUID: String, data: LocalDate): HorarioDiferenciado? {
+        val sql = """SELECT hd FROM ${HorarioDiferenciado::class.qualifiedName} hd
+                     JOIN hd.cadastro c
+                     WHERE c.uuid =:uuid
+                     AND hd.dataEspecial =:dataEspecial"""
+
+        val query = em.createQuery(sql)
+        query.setParameter("uuid", cadastroUUID)
+        query.setParameter("dataEspecial", data)
+
+        return try {
+            query.singleResult as HorarioDiferenciado
+        } catch (e: NoResultException) {
+            null
+        }
     }
 
     @Transactional

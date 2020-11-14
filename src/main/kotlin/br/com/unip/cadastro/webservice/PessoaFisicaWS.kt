@@ -27,7 +27,7 @@ class PessoaFisicaWS(val pessoaFisicaService: IPessoaFisicaService) {
     @PostMapping(value = ["/cadastrar"])
     @PreAuthorize("hasAuthority('${CADASTRAR_PESSOA_FISICA}')")
     fun cadastrar(@RequestBody request: PessoaFisicaRequest): ResponseEntity<String> {
-        val documento = montarDocumentoDTO(request.cpf)
+         val documento = montarDocumentoDTO(request.cpf)
         val dto = PessoaFisicaDTO(request.nome, request.sobrenome, request.telefone, documento)
 
         val uuid = pessoaFisicaService.cadastrar(dto)

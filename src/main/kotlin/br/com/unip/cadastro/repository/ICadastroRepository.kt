@@ -21,4 +21,6 @@ interface ICadastroRepository {
     fun adicionarEndereco(domain: EnderecoDomain, uuid: String)
 
     fun buscarEndereco(uuid: String): EnderecoDTO?
+
+    fun salvar(cadastro: Cadastro)
 }
