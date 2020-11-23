@@ -2,18 +2,8 @@ package br.com.unip.cadastro.repository.entity
 
 import br.com.unip.cadastro.repository.entity.enums.EStatusCadastro
 import br.com.unip.cadastro.repository.util.PersistenciaUtil
-import org.hibernate.annotations.Cascade
-import org.hibernate.annotations.CascadeType.PERSIST
-import java.util.UUID
-import javax.persistence.Column
-import javax.persistence.Entity
-import javax.persistence.EnumType
-import javax.persistence.Enumerated
-import javax.persistence.FetchType
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
-import javax.persistence.OneToOne
+import java.util.*
+import javax.persistence.*
 
 @Entity
 class Cadastro {
@@ -31,6 +21,15 @@ class Cadastro {
 
     @Column
     val uuid: String = UUID.randomUUID().toString()
+
+    var urlImagem: String? = ""
+
+    @Column
+    var nota: Double? = null
+
+    @Column
+    @Enumerated(EnumType.STRING)
+    var categoria: ECategoria? = null
 
     constructor(status: EStatusCadastro) {
         this.status = status

@@ -40,8 +40,8 @@ class PessoaFisicaService(val pessoaDomainMapper: PessoaDomainMapper,
         }
     }
 
-    override fun buscar(): PessoaFisicaDTO {
-        return pfRepository.buscarPorCadastroUUID(getCadastroUUID())
+    override fun buscar(cadastroUUID: String): PessoaFisicaDTO {
+        return pfRepository.buscarPorCadastroUUID(cadastroUUID)
     }
 
     private fun getCadastroUUID(): String {

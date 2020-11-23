@@ -11,11 +11,14 @@ import br.com.unip.cadastro.exception.ParametroInvalidoException
 
 class CNPJ : ICampo<String> {
 
+    private val REGEX_NUMEROS: Regex = "[^0-9]".toRegex()
+
     private val cnpj: String
 
     constructor(cnpj: String?) {
         try {
-            this.cnpj = cnpjValido(CampoNumerico(CampoObrigatorio(cnpj)).get())
+            val cnpjSemFormato = cnpj?.replace(REGEX_NUMEROS, "")
+            this.cnpj = cnpjValido(CampoNumerico(CampoObrigatorio(cnpjSemFormato)).get())
         } catch (e: CampoNumericoException) {
             throw CampoNumericoException(CNPJ_INVALIDO)
         } catch (e: CampoObrigatorioException) {

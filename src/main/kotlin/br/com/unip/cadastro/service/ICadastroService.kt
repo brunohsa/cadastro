@@ -10,4 +10,8 @@ interface ICadastroService {
     fun adicionarEndereco(dto: EnderecoDTO)
 
     fun buscarEndereco(): EnderecoDTO?
+
+    fun alterarCategoria(categoria: String?)
+
+    fun atualizarNota(cadastroUUID: String, nota: Double?)
 }

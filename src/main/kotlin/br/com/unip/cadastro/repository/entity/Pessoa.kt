@@ -36,7 +36,7 @@ open class Pessoa {
     @OneToOne(fetch = FetchType.LAZY, optional = false)
     @Cascade(ALL)
     @JoinColumn(name = "endereco_id")
-    private lateinit var endereco: Endereco
+    private var endereco: Endereco? = null
 
     @OneToOne(fetch = FetchType.LAZY, optional = false)
     @Cascade(ALL)

@@ -4,6 +4,7 @@ import br.com.unip.cadastro.domain.CadastroDomain
 import br.com.unip.cadastro.domain.EnderecoDomain
 import br.com.unip.cadastro.dto.CadastroDTO
 import br.com.unip.cadastro.dto.EnderecoDTO
+import br.com.unip.cadastro.repository.entity.Cadastro
 
 interface ICadastroRepository {
 
@@ -15,7 +16,11 @@ interface ICadastroRepository {
 
     fun buscar(uuid: String): CadastroDTO?
 
+    fun buscarPorUUID(uuid: String): Cadastro
+
     fun adicionarEndereco(domain: EnderecoDomain, uuid: String)
 
     fun buscarEndereco(uuid: String): EnderecoDTO?
+
+    fun salvar(cadastro: Cadastro)
 }

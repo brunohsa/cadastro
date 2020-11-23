@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60785265-7743-4b00-8f7b-94500422d85a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="3332164e-c8b7-4150-8321-89fedb6c0c07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/CadastroDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/dto/CadastroDTO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/CadastroRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/CadastroRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/Cadastro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/repository/entity/Cadastro.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/CadastroService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/CadastroService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/ICadastroService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/service/ICadastroService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/CadastroWS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/CadastroWS.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/PessoaJuridicaWS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/PessoaJuridicaWS.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/CadastroResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cadastro/webservice/model/response/CadastroResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cadastro-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/cadastro-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-docker.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Teste.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Teste.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="Kotlin File" />
-        <option value="Kotlin Interface" />
-        <option value="Kotlin Enum" />
-        <option value="Kotlin Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,35 +31,27 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1TtCzb2JlmNh2xwft88PBnrpOsm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectId" id="1j7WJKEFKtQnP62iyJLT3LdSTvr" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573258297718" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/domain" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/db/sql" />
   </component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
-      <recent name="br.com.unip.cardapio.exception" />
-      <recent name="br.com.unip.cardapio.domain" />
-      <recent name="br.com.unip.cardapio.mapper" />
-      <recent name="br.com.unip.cardapio.domain.completo" />
-      <recent name="br.com.unip.cardapio.webservice.model.request" />
+      <recent name="br.com.unip.cadastro.webservice.model.request" />
+      <recent name="br.com.unip.cadastro.repository.entity" />
+      <recent name="br.com.unip.cadastro.domain" />
+      <recent name="br.com.unip.cadastro.dto" />
+      <recent name="br.com.unip.cadastro.domain.campos.horarios.horariofunc" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="br.com.unip.cardapio.domain.completo" />
-      <recent name="br.com.unip.cardapio.domain.parcial" />
-      <recent name="br.com.unip.cardapio.domain" />
-      <recent name="br.com.unip.cardapio.domain.campos.parcial" />
-      <recent name="br.com.unip.cardapio.domain.campos.completo" />
+      <recent name="br.com.unip.cadastro.domain.campos.horarios" />
+      <recent name="br.com.unip.cadastro.domain.campos.horariofunc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources/db/sql" />
-      <recent name="$PROJECT_DIR$/src/main/kotlin/br/com/unip/cardapio/dto" />
+      <recent name="C:\workspace\cadastro\src\main\resources\db\sql" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -75,32 +66,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.br.com.unip.cardapio.StartApplicationKt">
-    <configuration name="All in cadastro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.br.com.unip.cadastro.StartApplicationKt">
+    <configuration name="Teste.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cadastro" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="Teste" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="br.com.unip.cardapio.StartApplicationKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="br.com.unip.cadastro.StartApplicationKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="cadastro" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="br.com.unip.cardapio.StartApplicationKt" />
+      <option name="MAIN_CLASS_NAME" value="br.com.unip.cadastro.StartApplicationKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.Teste.test" />
+      <item itemvalue="Kotlin.br.com.unip.cadastro.StartApplicationKt" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.br.com.unip.cardapio.StartApplicationKt" />
-        <item itemvalue="JUnit.All in cadastro" />
+        <item itemvalue="Kotlin.br.com.unip.cadastro.StartApplicationKt" />
+        <item itemvalue="JUnit.Teste.test" />
       </list>
     </recent_temporary>
   </component>
@@ -109,18 +106,23 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="60785265-7743-4b00-8f7b-94500422d85a" name="Default Changelist" comment="" />
-      <created>1568665076084</created>
+      <changelist id="3332164e-c8b7-4150-8321-89fedb6c0c07" name="Default Changelist" comment="" />
+      <created>1603155536852</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1568665076084</updated>
+      <updated>1603155536852</updated>
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="All_in_cadastro - 2019.10.29 at 17h 56m 46s.xml">
-      <configuration name="All in cadastro" configurationId="JUnit" />
-    </history-entry>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -135,24 +137,65 @@
       </map>
     </option>
   </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>dummy://kotlinDecompiled/AuthenticationUtil.decompiled.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="simpleUML.UMLToolWindowPlugin">
+    <General>
+      <option name="birdViewUpdateDelay" value="2000" />
+      <option name="defaultFileLocation" value="file://$PROJECT_DIR$/.." />
+    </General>
+    <Classdiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="defaultFieldsExpanded" value="false" />
+      <option name="defaultContructorsExpanded" value="false" />
+      <option name="defaultMethodsExpanded" value="false" />
+      <option name="showParameters" value="true" />
+      <option name="showTooltip" value="true" />
+      <option name="showReturnValues" value="true" />
+      <option name="longModifier" value="true" />
+      <option name="implementsBehaviour" value="1" />
+      <option name="extendsBehaviour" value="1" />
+      <option name="compartmentBehaviour" value="1" />
+      <option name="interfaceBackgroundColor" value="-6494306" />
+      <option name="abstractClassBackgroundColor" value="-1580132" />
+      <option name="classBackgroundColor" value="-6508057" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="quickSourceLinkColor" value="-16776961" />
+      <option name="quickDiagramLinkColor" value="-8454144" />
+      <option name="drawDecorations" value="false" />
+      <option name="hideFieldList" value="" />
+      <option name="showFieldList" value="" />
+      <option name="hideConstructorList" value="" />
+      <option name="showConstructorList" value="" />
+      <option name="hideMethodList" value="" />
+      <option name="showMethodList" value="" />
+      <option name="minimumFigureSize" value="0,0" />
+    </Classdiagram>
+    <Dependencydiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="0" />
+    </Dependencydiagram>
+    <Packagediagram>
+      <option name="diagramTitleFont" value="SansSerif,0,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="packageBackgroundColor" value="-4144960" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="2" />
+    </Packagediagram>
   </component>
 </project>

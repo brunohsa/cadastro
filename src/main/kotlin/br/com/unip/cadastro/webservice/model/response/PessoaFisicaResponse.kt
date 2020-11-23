@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(Include.NON_NULL)
-class PessoaResponse(@JsonProperty(value = "nome") val nome: String,
-                     @JsonProperty(value = "sobrenome") var sobrenome: String?,
-                     @JsonProperty(value = "telefone") var telefone: String?,
-                     @JsonProperty(value = "documento") var documentoResponse: DocumentoResponse?)
+class PessoaFisicaResponse(@JsonProperty(value = "nome") val nome: String?,
+                           @JsonProperty(value = "sobrenome") val sobrenome: String?,
+                           @JsonProperty(value = "telefone") val telefone: String?,
+                           @JsonProperty(value = "cpf") val cpf: String?) : IPessoaResponse

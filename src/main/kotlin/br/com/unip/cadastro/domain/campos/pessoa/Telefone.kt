@@ -16,6 +16,8 @@ class Telefone : ICampo<String> {
 
     private val TAMANHO_LIMITE = 11
 
+    private val REGEX_NUMEROS: Regex = "[^0-9]".toRegex()
+
     private val telefone: String
 
     constructor(telefone: String?) {
@@ -23,7 +25,8 @@ class Telefone : ICampo<String> {
             this.telefone = ""
         } else {
             try {
-                this.telefone = CampoTamanhoLimite(CampoNumerico(CampoOpcional(telefone)), TAMANHO_LIMITE).get()
+                val telefoneSemMascara = telefone.replace(REGEX_NUMEROS, "")
+                this.telefone = CampoTamanhoLimite(CampoNumerico(CampoOpcional(telefoneSemMascara)), TAMANHO_LIMITE).get()
             } catch (e: CampoNumericoException) {
                 throw CampoNumericoException(CAMPO_TELEFONE_DEVE_SER_NUMERICO)
             } catch (e: CampoExcedeTamanhoLimiteException) {
