@@ -102,7 +102,7 @@ class CadastroRepository(val cadastroEntityMapper: CadastroEntityMapper,
     override fun buscar(uuid: String): CadastroDTO? {
         val cadastro = buscarPorUUID(uuid)
         val pessoa = mapPessoa(cadastro.getPessoa())
-        return CadastroDTO(cadastro.uuid, cadastro.status.name, pessoa)
+        return CadastroDTO(cadastro.uuid, cadastro.categoria, cadastro.status.name, pessoa)
     }
 
     private fun mapPessoa(pessoa: Pessoa): IPessoaDTO {

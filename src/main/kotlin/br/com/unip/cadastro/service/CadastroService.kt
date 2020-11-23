@@ -8,6 +8,7 @@ import br.com.unip.cadastro.exception.UsuarioNaoPossuiCadastroException
 import br.com.unip.cadastro.mapper.EnderecoDomainMapper
 import br.com.unip.cadastro.repository.ICadastroRepository
 import br.com.unip.cadastro.repository.ILocalizacaoRepository
+import br.com.unip.cadastro.repository.entity.ECategoria
 import org.springframework.stereotype.Service
 
 @Service
@@ -28,6 +29,26 @@ class CadastroService(val cadastroRepository: ICadastroRepository,
 
     override fun buscarEndereco(): EnderecoDTO? {
         return cadastroRepository.buscarEndereco(getCadastroUUID())
+    }
+
+    override fun alterarCategoria(categoria: String?) {
+        if (categoria == null) {
+            return
+        }
+        val cadastro = cadastroRepository.buscarPorUUID(getCadastroUUID())
+        cadastro.categoria = ECategoria.valueOf(categoria)
+
+        cadastroRepository.salvar(cadastro)
+    }
+
+    override fun atualizarNota(cadastroUUID: String, nota: Double?) {
+        if (nota == null) {
+            return
+        }
+        val cadastro = cadastroRepository.buscarPorUUID(cadastroUUID)
+        cadastro.nota = nota
+
+        cadastroRepository.salvar(cadastro)
     }
 
     private fun getCadastroUUID(): String {

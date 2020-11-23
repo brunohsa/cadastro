@@ -6,6 +6,7 @@ import br.com.unip.cadastro.security.Permissoes.ALTERAR_PESSOA_JURIDICA
 import br.com.unip.cadastro.security.Permissoes.CADASTRAR_PESSOA_JURIDICA
 import br.com.unip.cadastro.service.IHorariosFuncionamentoService
 import br.com.unip.cadastro.service.IPessoaJuridicaService
+import br.com.unip.cadastro.webservice.model.request.AlterarCategoriaRequest
 import br.com.unip.cadastro.webservice.model.request.AlterarImagemProdutoRequest
 import br.com.unip.cadastro.webservice.model.request.HorarioDiferenciadoRequest
 import br.com.unip.cadastro.webservice.model.request.PessoaJuridicaRequest

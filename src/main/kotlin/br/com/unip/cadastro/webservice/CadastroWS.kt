@@ -2,23 +2,19 @@ package br.com.unip.cadastro.webservice
 
 import br.com.unip.autenticacaolib.util.AuthenticationUtil
 import br.com.unip.cadastro.dto.*
-import br.com.unip.cadastro.repository.entity.PessoaFisica
 import br.com.unip.cadastro.security.Permissoes.ADICIONAR_ENDERECO
 import br.com.unip.cadastro.security.Permissoes.BUSCAR_CADASTRO
 import br.com.unip.cadastro.security.Permissoes.BUSCAS_ENDERECO
 import br.com.unip.cadastro.service.ICadastroService
+import br.com.unip.cadastro.webservice.model.request.AlterarCategoriaRequest
+import br.com.unip.cadastro.webservice.model.request.AtualizarNotaRequest
 import br.com.unip.cadastro.webservice.model.request.EnderecoRequest
 import br.com.unip.cadastro.webservice.model.response.*
 import io.swagger.annotations.ApiImplicitParam
 import io.swagger.annotations.ApiImplicitParams
 import org.springframework.http.ResponseEntity
 import org.springframework.security.access.prepost.PreAuthorize
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PathVariable
-import org.springframework.web.bind.annotation.PutMapping
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping(value = ["/v1/cadastros"])
@@ -31,6 +27,23 @@ class CadastroWS(val cadastroService: ICadastroService) {
         val cadastroUUID = AuthenticationUtil.getCadastroUUID()!!
         val cadastroDTO = cadastroService.buscar(cadastroUUID)
         return ResponseEntity.ok(cadastroDTO.toResponse())
+    }
+
+    @ApiImplicitParams(ApiImplicitParam(name = "token", value = "Token", required = true, paramType = "header"))
+    @PutMapping(value = ["/alterar-categoria"])
+    fun alterarCategoriaAtuacao(@RequestBody request: AlterarCategoriaRequest): ResponseEntity<CadastroResponse> {
+        val dto = AlterarCategoriaRequest(request.categoria)
+        cadastroService.alterarCategoria(dto.categoria)
+        return ResponseEntity.ok(cadastroService.buscar(AuthenticationUtil.getCadastroUUID()!!).toResponse())
+    }
+
+    @ApiImplicitParams(ApiImplicitParam(name = "token", value = "Token", required = true, paramType = "header"))
+    @PutMapping(value = ["/{cadastro_uuid}/atualizar/nota"])
+    fun atualizarNota(@PathVariable(value = "cadastro_uuid") uuid: String,
+                      @RequestBody request: AtualizarNotaRequest): ResponseEntity<CadastroResponse> {
+        val dto = AtualizarNotaRequest(request.nota)
+        cadastroService.atualizarNota(uuid, dto.nota)
+        return ResponseEntity.ok(cadastroService.buscar(uuid).toResponse())
     }
 
     @ApiImplicitParams(ApiImplicitParam(name = "token", value = "Token", required = true, paramType = "header"))
@@ -65,7 +78,7 @@ class CadastroWS(val cadastroService: ICadastroService) {
     }
 
     private fun CadastroDTO.toResponse() =
-            CadastroResponse(this.uuid, this.status, mapPessoa(this.pessoa))
+            CadastroResponse(this.uuid, this.categoria?.name, this.status, mapPessoa(this.pessoa))
 
     private fun PessoaFisicaDTO.toResponse() =
             PessoaFisicaResponse(this.nome, this.sobrenome, this.telefone, this.documento?.numero)
